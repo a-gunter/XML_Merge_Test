@@ -161,6 +161,52 @@
 						<Joints>N(9acadcfb-1ea7-4c6a-9328-c5758d79cff2:o)|(154,70) N(499537b8-d8b1-4187-85c9-0f8f486507e4:16)|(353,70)</Joints>
 					</Attributes>
 				</Wire>
+				<Subtract>
+					<Attributes>
+						<Bounds>179 130 30 30</Bounds>
+						<Id>6fa3eae1-5726-4074-9d50-96128620f1c6</Id>
+					</Attributes>
+				</Subtract>
+				<Literal xmlns="http://www.ni.com/MocCommon">
+					<Attributes>
+						<Bounds>99 130 40 15</Bounds>
+						<DataType>Int32</DataType>
+						<Id>22c10dd3-48ea-491d-bc5c-328d28281f1a</Id>
+					</Attributes>
+					<p.Data>0</p.Data>
+					<NumericBehavior>
+						<Attributes>
+							<Interpretation>Numeric</Interpretation>
+							<ValueFormatter>LV:0</ValueFormatter>
+						</Attributes>
+					</NumericBehavior>
+				</Literal>
+				<Literal xmlns="http://www.ni.com/MocCommon">
+					<Attributes>
+						<Bounds>99 165 40 15</Bounds>
+						<DataType>Int32</DataType>
+						<Id>b7e8ffdf-b7b7-4043-b81f-fcf20687cff9</Id>
+					</Attributes>
+					<p.Data>0</p.Data>
+					<NumericBehavior>
+						<Attributes>
+							<Interpretation>Numeric</Interpretation>
+							<ValueFormatter>LV:0</ValueFormatter>
+						</Attributes>
+					</NumericBehavior>
+				</Literal>
+				<Wire xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<Id>a9bfc869-bc03-41c1-8e6b-31f3cfd4928d</Id>
+						<Joints>N(b7e8ffdf-b7b7-4043-b81f-fcf20687cff9:Out)|(139,170) h(33) v(-20) N(6fa3eae1-5726-4074-9d50-96128620f1c6:y)|(179,150)</Joints>
+					</Attributes>
+				</Wire>
+				<Wire xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<Id>709b5228-ed41-4707-aaa2-929631a48b0b</Id>
+						<Joints>N(22c10dd3-48ea-491d-bc5c-328d28281f1a:Out)|(139,135) N(6fa3eae1-5726-4074-9d50-96128620f1c6:x)|(179,135)</Joints>
+					</Attributes>
+				</Wire>
 				<LoopCount>
 					<Attributes>
 						<Bounds>1 1 15 15</Bounds>
