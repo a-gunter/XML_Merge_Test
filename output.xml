@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleBranch" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -40,6 +40,7 @@
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="23" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=22}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="31" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1_2" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=30}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" TabIndex="[int]3" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" />
+			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="92" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]value" TabIndex="[int]4" Top="[float]0" Value="{DataItemBinding Id=91}" Width="[float]72" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram>
 			<Attributes>
@@ -164,7 +165,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>5c93bca0-1f73-4ba3-80fa-3166a5af786f</Id>
-					<Joints>N(2725c1ab-6b93-4816-8424-f450e4c11245:o)|(495,225) h(25) B(1) N(8148662a-8527-4e69-b9ea-0b100174f8c6:x)|(540,225) B(1) v(45) N(c4524ebe-7e6c-4e89-bb92-8d73544f0685:48)|(631,270)</Joints>
+					<Joints>N(2725c1ab-6b93-4816-8424-f450e4c11245:o)|(495,225) h(25) B(1) N(8148662a-8527-4e69-b9ea-0b100174f8c6:x)|(540,225) B(1) v(45) h(50) B(4) N(c4524ebe-7e6c-4e89-bb92-8d73544f0685:48)|(631,270) B(4) v(95) h(550) v(-100) N(8f97442a-9846-41ae-bd1f-833bb54a4dd0:y)|(1125,265)</Joints>
 				</Attributes>
 			</Wire>
 			<CaseStructure>
@@ -378,12 +379,12 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>075f4b6c-91ab-404c-bf32-b1d9b99a0d5c</Id>
-					<Joints>N(8148662a-8527-4e69-b9ea-0b100174f8c6:x &gt; 0?)|(570,225) N(833cf5e4-1f40-4b40-a14d-156fb1c0f57d:48)|(631,225)</Joints>
+					<Joints>N(8148662a-8527-4e69-b9ea-0b100174f8c6:x &gt; 0?)|(570,225) h(40) B(1) N(833cf5e4-1f40-4b40-a14d-156fb1c0f57d:48)|(631,225) B(1) v(120) h(575) v(-85) N(f40e6e59-6c33-4976-8a75-38877df62903:s)|(1190,260)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>1063 220 40 15</Bounds>
+					<Bounds>1260 220 40 15</Bounds>
 					<DataItem>77</DataItem>
 					<Id>b6aa8f2c-796e-4807-bd24-39f36a099f94</Id>
 					<Label>81</Label>
@@ -400,7 +401,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>b6aa8f2c-796e-4807-bd24-39f36a099f94</AttachedTo>
-					<Bounds>1108 220 39 14</Bounds>
+					<Bounds>1305 220 39 14</Bounds>
 					<Id>85425523-50de-4507-a5e3-78f15ecdc0ec</Id>
 				</Attributes>
 				<p.Text>Output</p.Text>
@@ -408,7 +409,79 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>9b91ea24-6984-4160-adc9-01c29dc24289</Id>
-					<Joints>N(d41f7d1e-914f-400f-81f9-c9b44064cd6b:48)|(1033,225) N(b6aa8f2c-796e-4807-bd24-39f36a099f94:Value)|(1066,225)</Joints>
+					<Joints>N(d41f7d1e-914f-400f-81f9-c9b44064cd6b:48)|(1033,225) h(72) B(1) N(b6aa8f2c-796e-4807-bd24-39f36a099f94:Value)|(1263,225) B(1) v(25) N(8f97442a-9846-41ae-bd1f-833bb54a4dd0:x)|(1125,250)</Joints>
+				</Attributes>
+			</Wire>
+			<MaxAndMin>
+				<Attributes>
+					<Bounds>1125 245 30 30</Bounds>
+					<Id>8f97442a-9846-41ae-bd1f-833bb54a4dd0</Id>
+				</Attributes>
+				<ConfigurableDataTypeTerminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<DesiredType>Boolean</DesiredType>
+						<Direction>Output</Direction>
+						<Hotspot>30 20</Hotspot>
+						<Id>min(x,y)</Id>
+					</Attributes>
+				</ConfigurableDataTypeTerminal>
+				<ConfigurableDataTypeTerminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<DesiredType>Boolean</DesiredType>
+						<Direction>Output</Direction>
+						<Hotspot>30 5</Hotspot>
+						<Id>max(x,y)</Id>
+					</Attributes>
+				</ConfigurableDataTypeTerminal>
+			</MaxAndMin>
+			<Select>
+				<Attributes>
+					<Bounds>1190 240 40 40</Bounds>
+					<Id>f40e6e59-6c33-4976-8a75-38877df62903</Id>
+				</Attributes>
+			</Select>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>5d9e789c-5b0c-47b0-9943-c580b6b22ae5</Id>
+					<Joints>N(8f97442a-9846-41ae-bd1f-833bb54a4dd0:max(x,y\))|(1155,250) h(25) v(-5) N(f40e6e59-6c33-4976-8a75-38877df62903:t)|(1190,245)</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>2c27b0c6-8133-4c79-b5c2-1cb92aa30861</Id>
+					<Joints>N(8f97442a-9846-41ae-bd1f-833bb54a4dd0:min(x,y\))|(1155,265) h(5) v(10) N(f40e6e59-6c33-4976-8a75-38877df62903:f)|(1190,275)</Joints>
+				</Attributes>
+			</Wire>
+			<DataAccessor xmlns="http://www.ni.com/MocCommon">
+				<Attributes>
+					<Bounds>1260 255 40 15</Bounds>
+					<DataItem>91</DataItem>
+					<Id>4a705495-b5ce-4e1a-97b0-b93b7bac89be</Id>
+					<Label>95</Label>
+				</Attributes>
+				<Terminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<Direction>Input</Direction>
+						<Hotspot>3 5</Hotspot>
+						<Id>Value</Id>
+					</Attributes>
+				</Terminal>
+			</DataAccessor>
+			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<AttachedTo>4a705495-b5ce-4e1a-97b0-b93b7bac89be</AttachedTo>
+					<Bounds>1305 255 30 14</Bounds>
+					<Id>53ecfb79-6878-42c6-b039-6694b429924c</Id>
+				</Attributes>
+				<p.Text>value</p.Text>
+			</NodeLabel>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>9ee1a491-5307-41f8-849f-db065f3326d7</Id>
+					<Joints>N(f40e6e59-6c33-4976-8a75-38877df62903:s? t:f)|(1230,260) N(4a705495-b5ce-4e1a-97b0-b93b7bac89be:Value)|(1263,260)</Joints>
 				</Attributes>
 			</Wire>
 		</BlockDiagram>
@@ -426,6 +499,9 @@
 		</DataItem>
 		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Int32" Id="77" Name="Output">
 			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Double" Id="91" Name="value">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 </SourceFile>
