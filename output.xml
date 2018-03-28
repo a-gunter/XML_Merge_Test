@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMasterUpdated" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -45,13 +45,6 @@
 			<Attributes>
 				<Id>28c7687d-d6b8-4380-bc6e-d1efb01b44d6</Id>
 			</Attributes>
-			<Add>
-				<Attributes>
-					<Bounds>400 200 30 30</Bounds>
-					<Id>bb0b9f40-78e9-44f2-aa0f-abc3970ac530</Id>
-					<Terminals>o=07d3fc1b-71c2-4e0c-8d2e-4ac2c5a4bba5, c0t0v=137ce1b6-1853-4f39-a97b-131396f22c17, c1t0v=ad7d7f29-f609-402c-83ac-94661b27291d</Terminals>
-				</Attributes>
-			</Add>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 200 40 15</Bounds>
@@ -79,7 +72,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>137ce1b6-1853-4f39-a97b-131396f22c17</Id>
-					<Joints>N(53272ba1-299f-4344-bb22-b626f6022e13:Value)|(370,205) N(bb0b9f40-78e9-44f2-aa0f-abc3970ac530:c0t0v)|(400,205)</Joints>
+					<Joints>N(53272ba1-299f-4344-bb22-b626f6022e13:Value)|(370,205) N(604f5b7c-942d-4f94-8684-b57f6aad9c85:x)|(400,205)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -109,22 +102,16 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>ad7d7f29-f609-402c-83ac-94661b27291d</Id>
-					<Joints>N(2516fa20-6ca1-4bc4-ae1a-39ee4ab50986:Value)|(370,220) N(bb0b9f40-78e9-44f2-aa0f-abc3970ac530:c1t0v)|(400,220)</Joints>
+					<Joints>N(2516fa20-6ca1-4bc4-ae1a-39ee4ab50986:Value)|(370,220) N(604f5b7c-942d-4f94-8684-b57f6aad9c85:y)|(400,220)</Joints>
 				</Attributes>
 			</Wire>
 			<Multiply>
 				<Attributes>
 					<Bounds>465 210 30 30</Bounds>
 					<Id>d0e0fe52-4adb-4c54-8b88-e769d43855c9</Id>
-					<Terminals>o=1b5e493e-ce3c-42b3-bd36-7e802751b5c7, c0t0v=07d3fc1b-71c2-4e0c-8d2e-4ac2c5a4bba5, c1t0v=0d2884b1-fa29-4826-881a-09e5ed226ff2</Terminals>
+					<Terminals>o=1b5e493e-ce3c-42b3-bd36-7e802751b5c7, c0t0v=7352eb76-9656-4f98-bb0f-12ed1eee66db, c1t0v=0d2884b1-fa29-4826-881a-09e5ed226ff2</Terminals>
 				</Attributes>
 			</Multiply>
-			<Wire xmlns="http://www.ni.com/PlatformFramework">
-				<Attributes>
-					<Id>07d3fc1b-71c2-4e0c-8d2e-4ac2c5a4bba5</Id>
-					<Joints>N(bb0b9f40-78e9-44f2-aa0f-abc3970ac530:o)|(430,215) h(25) B(1) N(d0e0fe52-4adb-4c54-8b88-e769d43855c9:c0t0v)|(465,215) B(1) v(-20) N(10a60369-e99b-4a00-8ec3-9e40af950f45:48)|(631,195)</Joints>
-				</Attributes>
-			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 265 40 15</Bounds>
@@ -172,7 +159,7 @@
 					<Bounds>635 90 394 245</Bounds>
 					<Default>49</Default>
 					<Id>582fa2f6-6498-4606-b621-c3857bf8c4db</Id>
-					<Selected>49</Selected>
+					<Selected>50</Selected>
 					<UserSelectorBounds>153 0 88 17</UserSelectorBounds>
 				</Attributes>
 				<CaseStructure.Case>
@@ -354,7 +341,7 @@
 						<Bounds>-4 100 13 10</Bounds>
 						<Docking>Left</Docking>
 						<Id>10a60369-e99b-4a00-8ec3-9e40af950f45</Id>
-						<Terminals>582fa2f6-6498-4606-b621-c3857bf8c4db=07d3fc1b-71c2-4e0c-8d2e-4ac2c5a4bba5, 41ec0f90-f822-4d8e-a96f-73bcad1e1b22, 5ebccff6-1585-438c-98c4-9e314f2dc0ea=1ab53e1f-8bc3-4196-af6c-1d0f192aa0dc</Terminals>
+						<Terminals>582fa2f6-6498-4606-b621-c3857bf8c4db=56fc8248-eb4a-49a3-b8e0-d31d58685dd1, 41ec0f90-f822-4d8e-a96f-73bcad1e1b22, 5ebccff6-1585-438c-98c4-9e314f2dc0ea=1ab53e1f-8bc3-4196-af6c-1d0f192aa0dc</Terminals>
 					</Attributes>
 				</CaseStructure.Tunnel>
 				<CaseStructure.Tunnel>
@@ -411,6 +398,30 @@
 					<Joints>N(60388355-eb60-4638-a1ac-b4f77e0d6d20:48)|(1033,225) N(d3eff028-9402-4fbb-a761-b7bfabd54a5f:Value)|(1066,225)</Joints>
 				</Attributes>
 			</Wire>
+			<Square>
+				<Attributes>
+					<Bounds>540 180 30 30</Bounds>
+					<Id>6f627ac4-7258-4165-82b0-f895f91b382b</Id>
+				</Attributes>
+			</Square>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>7352eb76-9656-4f98-bb0f-12ed1eee66db</Id>
+					<Joints>N(604f5b7c-942d-4f94-8684-b57f6aad9c85:x/y)|(430,215) h(25) B(1) N(d0e0fe52-4adb-4c54-8b88-e769d43855c9:c0t0v)|(465,215) B(1) v(-20) N(6f627ac4-7258-4165-82b0-f895f91b382b:x)|(540,195)</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>56fc8248-eb4a-49a3-b8e0-d31d58685dd1</Id>
+					<Joints>N(6f627ac4-7258-4165-82b0-f895f91b382b:x^2)|(570,195) N(10a60369-e99b-4a00-8ec3-9e40af950f45:48)|(631,195)</Joints>
+				</Attributes>
+			</Wire>
+			<Divide>
+				<Attributes>
+					<Bounds>400 200 30 30</Bounds>
+					<Id>604f5b7c-942d-4f94-8684-b57f6aad9c85</Id>
+				</Attributes>
+			</Divide>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
