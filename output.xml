@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMasterUpdated" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -45,17 +45,6 @@
 			<Attributes>
 				<Id>f5817017-e324-49d8-ace4-5dc1a1b6f834</Id>
 			</Attributes>
-			<Add>
-				<Attributes>
-					<Bounds>400 200 30 30</Bounds>
-					<Id>992221e9-e725-44ed-ba70-00fc0bf1dc39</Id>
-					<Terminals>
-						<Terminal0>o=de44fd4f-f9eb-4bef-8954-e55ee6675b07</Terminal0>
-						<Terminal1>c0t0v=37402271-77cb-47bf-9d4b-416d656c47da</Terminal1>
-						<Terminal2>c1t0v=c06bcb07-0820-4f38-8d97-a256d664f883</Terminal2>
-					</Terminals>
-				</Attributes>
-			</Add>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 200 40 15</Bounds>
@@ -83,7 +72,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>37402271-77cb-47bf-9d4b-416d656c47da</Id>
-					<Joints>N(a23beb00-ff92-461f-978a-168538849487:Value)|(370,205) N(992221e9-e725-44ed-ba70-00fc0bf1dc39:c0t0v)|(400,205)</Joints>
+					<Joints>N(a23beb00-ff92-461f-978a-168538849487:Value)|(370,205) N(5cb6d1f6-6331-4684-bc15-56bcb0a8b2dd:x)|(400,205)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -113,7 +102,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>c06bcb07-0820-4f38-8d97-a256d664f883</Id>
-					<Joints>N(7249f2b4-a4a1-42ad-9c58-bcabea6f1a7e:Value)|(370,220) N(992221e9-e725-44ed-ba70-00fc0bf1dc39:c1t0v)|(400,220)</Joints>
+					<Joints>N(7249f2b4-a4a1-42ad-9c58-bcabea6f1a7e:Value)|(370,220) N(5cb6d1f6-6331-4684-bc15-56bcb0a8b2dd:y)|(400,220)</Joints>
 				</Attributes>
 			</Wire>
 			<Multiply>
@@ -122,17 +111,11 @@
 					<Id>af1a9dbe-abd4-43d1-af00-768d23c0db7e</Id>
 					<Terminals>
 						<Terminal0>o=c4462203-325e-4f8e-8ced-7e7092b3d6f5</Terminal0>
-						<Terminal1>c0t0v=de44fd4f-f9eb-4bef-8954-e55ee6675b07</Terminal1>
+						<Terminal1>c0t0v=4131f905-1154-4884-a910-90c0e864268a</Terminal1>
 						<Terminal2>c1t0v=2fe3c5ae-bf85-43d7-a662-c315068266fc</Terminal2>
 					</Terminals>
 				</Attributes>
 			</Multiply>
-			<Wire xmlns="http://www.ni.com/PlatformFramework">
-				<Attributes>
-					<Id>de44fd4f-f9eb-4bef-8954-e55ee6675b07</Id>
-					<Joints>N(992221e9-e725-44ed-ba70-00fc0bf1dc39:o)|(430,215) h(25) B(1) N(af1a9dbe-abd4-43d1-af00-768d23c0db7e:c0t0v)|(465,215) B(1) v(-20) N(35a9af3e-6bf0-49a4-8624-5069a1e69c1f:48)|(631,195)</Joints>
-				</Attributes>
-			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 265 40 15</Bounds>
@@ -180,7 +163,7 @@
 					<Bounds>635 90 394 245</Bounds>
 					<Default>49</Default>
 					<Id>d28fdf4f-8e19-442e-a007-59fb344b5e0d</Id>
-					<Selected>49</Selected>
+					<Selected>50</Selected>
 					<UserSelectorBounds>153 0 88 17</UserSelectorBounds>
 				</Attributes>
 				<CaseStructure.Case>
@@ -373,7 +356,7 @@
 						<Docking>Left</Docking>
 						<Id>35a9af3e-6bf0-49a4-8624-5069a1e69c1f</Id>
 						<Terminals>
-							<Terminal0>d28fdf4f-8e19-442e-a007-59fb344b5e0d=de44fd4f-f9eb-4bef-8954-e55ee6675b07</Terminal0>
+							<Terminal0>d28fdf4f-8e19-442e-a007-59fb344b5e0d=9cfd6152-e2be-44b2-af19-144eff97ce85</Terminal0>
 							<Terminal1>28ad9e20-134e-4496-bb2b-9e26fc26f380</Terminal1>
 							<Terminal2>0882bfc5-a2c2-4c76-8518-6d29b45186e1=b755304e-3142-41d6-9ab6-2378c4f5a81b</Terminal2>
 						</Terminals>
@@ -441,6 +424,30 @@
 					<Joints>N(df16b482-4946-49ac-9856-adcae341bc21:48)|(1033,225) N(b71eeb7d-1000-4563-9fd3-b31eada52648:Value)|(1066,225)</Joints>
 				</Attributes>
 			</Wire>
+			<Square>
+				<Attributes>
+					<Bounds>540 180 30 30</Bounds>
+					<Id>ac61b35d-4b14-4aab-8797-539a70c6dbef</Id>
+				</Attributes>
+			</Square>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>4131f905-1154-4884-a910-90c0e864268a</Id>
+					<Joints>N(5cb6d1f6-6331-4684-bc15-56bcb0a8b2dd:x/y)|(430,215) h(25) B(1) N(af1a9dbe-abd4-43d1-af00-768d23c0db7e:c0t0v)|(465,215) B(1) v(-20) N(ac61b35d-4b14-4aab-8797-539a70c6dbef:x)|(540,195)</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>9cfd6152-e2be-44b2-af19-144eff97ce85</Id>
+					<Joints>N(ac61b35d-4b14-4aab-8797-539a70c6dbef:x^2)|(570,195) N(35a9af3e-6bf0-49a4-8624-5069a1e69c1f:48)|(631,195)</Joints>
+				</Attributes>
+			</Wire>
+			<Divide>
+				<Attributes>
+					<Bounds>400 200 30 30</Bounds>
+					<Id>5cb6d1f6-6331-4684-bc15-56bcb0a8b2dd</Id>
+				</Attributes>
+			</Divide>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
