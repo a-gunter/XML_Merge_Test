@@ -40,6 +40,7 @@
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="23" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=22}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="31" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]24" Name="[string]input 1_2" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=30}" Width="[float]72" />
 			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="78" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]Output" TabIndex="[int]3" Top="[float]0" Value="{DataItemBinding Id=77}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" />
+			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="92" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]24" Name="[string]value" TabIndex="[int]4" Top="[float]0" Value="{DataItemBinding Id=91}" Width="[float]72" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram>
 			<Attributes>
@@ -155,7 +156,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>c4462203-325e-4f8e-8ced-7e7092b3d6f5</Id>
-					<Joints>N(af1a9dbe-abd4-43d1-af00-768d23c0db7e:o)|(495,225) h(25) B(1) N(d1d0c124-3880-46d6-bc54-6046716de9f1:x)|(540,225) B(1) v(45) N(1f72823d-d480-4b6c-93a3-f0a5dc4d9fdf:48)|(631,270)</Joints>
+					<Joints>N(af1a9dbe-abd4-43d1-af00-768d23c0db7e:o)|(495,225) h(25) B(1) N(d1d0c124-3880-46d6-bc54-6046716de9f1:x)|(540,225) B(1) v(45) h(50) B(4) N(1f72823d-d480-4b6c-93a3-f0a5dc4d9fdf:48)|(631,270) B(4) v(95) h(550) v(-100) N(a3f95b15-e0f2-4e7b-9151-36d6fbd613f7:y)|(1125,265)</Joints>
 				</Attributes>
 			</Wire>
 			<CaseStructure>
@@ -391,12 +392,12 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>2ba7061d-25aa-4a20-9e9c-de11d6e61194</Id>
-					<Joints>N(d1d0c124-3880-46d6-bc54-6046716de9f1:x &gt; 0?)|(570,225) N(9645e679-ea4a-415b-a9e1-1a86a007a940:48)|(631,225)</Joints>
+					<Joints>N(d1d0c124-3880-46d6-bc54-6046716de9f1:x &gt; 0?)|(570,225) h(40) B(1) N(9645e679-ea4a-415b-a9e1-1a86a007a940:48)|(631,225) B(1) v(120) h(575) v(-85) N(33b47934-4289-429a-aa0b-8d5983de872a:s)|(1190,260)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>1063 220 40 15</Bounds>
+					<Bounds>1260 220 40 15</Bounds>
 					<DataItem>77</DataItem>
 					<Id>b71eeb7d-1000-4563-9fd3-b31eada52648</Id>
 					<Label>ee7402c3-ad67-4b0f-97cf-1a464eca8e17</Label>
@@ -413,7 +414,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>b71eeb7d-1000-4563-9fd3-b31eada52648</AttachedTo>
-					<Bounds>1108 220 39 14</Bounds>
+					<Bounds>1305 220 39 14</Bounds>
 					<Id>ee7402c3-ad67-4b0f-97cf-1a464eca8e17</Id>
 				</Attributes>
 				<p.Text>Output</p.Text>
@@ -421,7 +422,79 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>b8467d26-8a1f-4c89-a3ed-b13e1cab7e48</Id>
-					<Joints>N(df16b482-4946-49ac-9856-adcae341bc21:48)|(1033,225) N(b71eeb7d-1000-4563-9fd3-b31eada52648:Value)|(1066,225)</Joints>
+					<Joints>N(df16b482-4946-49ac-9856-adcae341bc21:48)|(1033,225) h(72) B(1) N(b71eeb7d-1000-4563-9fd3-b31eada52648:Value)|(1263,225) B(1) v(25) N(a3f95b15-e0f2-4e7b-9151-36d6fbd613f7:x)|(1125,250)</Joints>
+				</Attributes>
+			</Wire>
+			<MaxAndMin>
+				<Attributes>
+					<Bounds>1125 245 30 30</Bounds>
+					<Id>a3f95b15-e0f2-4e7b-9151-36d6fbd613f7</Id>
+				</Attributes>
+				<ConfigurableDataTypeTerminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<DesiredType>Boolean</DesiredType>
+						<Direction>Output</Direction>
+						<Hotspot>30 20</Hotspot>
+						<Id>min(x,y)</Id>
+					</Attributes>
+				</ConfigurableDataTypeTerminal>
+				<ConfigurableDataTypeTerminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<DesiredType>Boolean</DesiredType>
+						<Direction>Output</Direction>
+						<Hotspot>30 5</Hotspot>
+						<Id>max(x,y)</Id>
+					</Attributes>
+				</ConfigurableDataTypeTerminal>
+			</MaxAndMin>
+			<Select>
+				<Attributes>
+					<Bounds>1190 240 40 40</Bounds>
+					<Id>33b47934-4289-429a-aa0b-8d5983de872a</Id>
+				</Attributes>
+			</Select>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>c6433b0a-1b00-4d55-88fb-a94be8d3d2e1</Id>
+					<Joints>N(a3f95b15-e0f2-4e7b-9151-36d6fbd613f7:max(x,y\))|(1155,250) h(25) v(-5) N(33b47934-4289-429a-aa0b-8d5983de872a:t)|(1190,245)</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>393240b5-369e-4cc2-b28f-1f8da14580e0</Id>
+					<Joints>N(a3f95b15-e0f2-4e7b-9151-36d6fbd613f7:min(x,y\))|(1155,265) h(5) v(10) N(33b47934-4289-429a-aa0b-8d5983de872a:f)|(1190,275)</Joints>
+				</Attributes>
+			</Wire>
+			<DataAccessor xmlns="http://www.ni.com/MocCommon">
+				<Attributes>
+					<Bounds>1260 255 40 15</Bounds>
+					<DataItem>91</DataItem>
+					<Id>6ee0170d-1e85-4473-9056-a743a7164aed</Id>
+					<Label>75d56fee-c972-48a9-9941-4e21bc6472b1</Label>
+				</Attributes>
+				<Terminal xmlns="http://www.ni.com/PlatformFramework">
+					<Attributes>
+						<DataType>Double</DataType>
+						<Direction>Input</Direction>
+						<Hotspot>3 5</Hotspot>
+						<Id>Value</Id>
+					</Attributes>
+				</Terminal>
+			</DataAccessor>
+			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<AttachedTo>6ee0170d-1e85-4473-9056-a743a7164aed</AttachedTo>
+					<Bounds>1305 255 30 14</Bounds>
+					<Id>75d56fee-c972-48a9-9941-4e21bc6472b1</Id>
+				</Attributes>
+				<p.Text>value</p.Text>
+			</NodeLabel>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>588a2414-9a99-47a5-a996-d963e45c927b</Id>
+					<Joints>N(33b47934-4289-429a-aa0b-8d5983de872a:s? t:f)|(1230,260) N(6ee0170d-1e85-4473-9056-a743a7164aed:Value)|(1263,260)</Joints>
 				</Attributes>
 			</Wire>
 			<Square>
@@ -463,6 +536,9 @@
 		</DataItem>
 		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Int32" Id="77" Name="Output">
 			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Double" Id="91" Name="value">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 </SourceFile>
