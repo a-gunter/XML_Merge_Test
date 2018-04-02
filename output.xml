@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMasterUpdated" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -45,17 +45,6 @@
 			<Attributes>
 				<Id>edc01397-d1e2-4899-a53c-ee6c21a2a18e</Id>
 			</Attributes>
-			<Add>
-				<Attributes>
-					<Bounds>400 200 30 30</Bounds>
-					<Id>e20581d4-167e-474e-af22-61576309d63c</Id>
-					<Terminals>
-						<Terminal0>o=29979d2d-90fe-4d3f-b208-41f21c322345</Terminal0>
-						<Terminal1>c0t0v=e396a230-a42c-47ea-b82c-02c9ded4fbdc</Terminal1>
-						<Terminal2>c1t0v=f94d09a5-26fd-4a43-9726-1abc45ca62f4</Terminal2>
-					</Terminals>
-				</Attributes>
-			</Add>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 200 40 15</Bounds>
@@ -83,7 +72,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>e396a230-a42c-47ea-b82c-02c9ded4fbdc</Id>
-					<Joints>N(ee1a75ae-1919-44d0-8323-cf831da9100c:Value)|(370,205) N(e20581d4-167e-474e-af22-61576309d63c:c0t0v)|(400,205)</Joints>
+					<Joints>N(ee1a75ae-1919-44d0-8323-cf831da9100c:Value)|(370,205) N(6f6a86f5-3642-4498-a94d-ac0d077c18b0:c0t0v)|(400,205)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -113,7 +102,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>f94d09a5-26fd-4a43-9726-1abc45ca62f4</Id>
-					<Joints>N(af272544-2bd6-468d-97a6-12df856a111d:Value)|(370,220) N(e20581d4-167e-474e-af22-61576309d63c:c1t0v)|(400,220)</Joints>
+					<Joints>N(af272544-2bd6-468d-97a6-12df856a111d:Value)|(370,220) N(6f6a86f5-3642-4498-a94d-ac0d077c18b0:c1t0v)|(400,220)</Joints>
 				</Attributes>
 			</Wire>
 			<Multiply>
@@ -130,7 +119,7 @@
 			<Wire xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<Id>29979d2d-90fe-4d3f-b208-41f21c322345</Id>
-					<Joints>N(e20581d4-167e-474e-af22-61576309d63c:o)|(430,215) h(25) B(1) N(ec4b3cde-bf00-46a8-a0b6-f9960088568f:c0t0v)|(465,215) B(1) v(-20) N(6e79156c-863c-4fd7-89d7-e168632ec9b4:48)|(631,195)</Joints>
+					<Joints>N(6f6a86f5-3642-4498-a94d-ac0d077c18b0:o)|(430,215) h(25) B(1) N(ec4b3cde-bf00-46a8-a0b6-f9960088568f:c0t0v)|(465,215) B(1) v(-20) N(6e79156c-863c-4fd7-89d7-e168632ec9b4:48)|(631,195)</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
@@ -441,6 +430,17 @@
 					<Joints>N(80c04d29-3bfc-4587-a614-0631e285e3e6:48)|(1033,225) N(d82d4d09-1153-4ba8-b0a4-dd7a5a946458:Value)|(1066,225)</Joints>
 				</Attributes>
 			</Wire>
+			<Multiply>
+				<Attributes>
+					<Bounds>400 200 30 30</Bounds>
+					<Id>6f6a86f5-3642-4498-a94d-ac0d077c18b0</Id>
+					<Terminals>
+						<Terminal0>o=29979d2d-90fe-4d3f-b208-41f21c322345</Terminal0>
+						<Terminal1>c0t0v=e396a230-a42c-47ea-b82c-02c9ded4fbdc</Terminal1>
+						<Terminal2>c1t0v=f94d09a5-26fd-4a43-9726-1abc45ca62f4</Terminal2>
+					</Terminals>
+				</Attributes>
+			</Multiply>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
