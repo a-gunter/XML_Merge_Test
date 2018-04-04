@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleMaster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]AddSimpleBranch" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -47,7 +47,7 @@
 			</Attributes>
 			<Add>
 				<Attributes>
-					<Bounds>400 200 30 30</Bounds>
+					<Bounds>385 145 30 30</Bounds>
 					<Id>185ae806-303f-4e65-a640-b54db5f0a265</Id>
 					<Terminals>
 						<Terminal0>o=c00ffd48-b553-408d-8fb1-7832f8417f9c</Terminal0>
@@ -58,7 +58,7 @@
 			</Add>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>330 200 40 15</Bounds>
+					<Bounds>315 145 40 15</Bounds>
 					<DataItem>16</DataItem>
 					<Id>ea0750aa-f6ee-450a-bb0e-992b3ad89de1</Id>
 					<Label>df6a4451-1d1e-47e5-a9db-b37efea85595</Label>
@@ -75,7 +75,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>ea0750aa-f6ee-450a-bb0e-992b3ad89de1</AttachedTo>
-					<Bounds>286 200 39 14</Bounds>
+					<Bounds>271 145 39 14</Bounds>
 					<Id>df6a4451-1d1e-47e5-a9db-b37efea85595</Id>
 				</Attributes>
 				<p.Text>input 0</p.Text>
@@ -85,15 +85,15 @@
 					<Id>22b56f03-a124-4802-aace-2793d440a490</Id>
 					<Joints>
 						<Joint0>N(ea0750aa-f6ee-450a-bb0e-992b3ad89de1:Value</Joint0>
-						<Joint1>|(370,205</Joint1>
+						<Joint1>|(355,150</Joint1>
 						<Joint2> N(185ae806-303f-4e65-a640-b54db5f0a265:c0t0v</Joint2>
-						<Joint3>|(400,205</Joint3>
+						<Joint3>|(385,150</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>330 215 40 15</Bounds>
+					<Bounds>315 160 40 15</Bounds>
 					<DataItem>22</DataItem>
 					<Id>ad459ee1-b10d-4ff1-add1-ed481acbc555</Id>
 					<Label>bdf2eb3a-b17e-4a08-9b11-e0d76b491667</Label>
@@ -110,7 +110,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>ad459ee1-b10d-4ff1-add1-ed481acbc555</AttachedTo>
-					<Bounds>286 215 39 14</Bounds>
+					<Bounds>271 160 39 14</Bounds>
 					<Id>bdf2eb3a-b17e-4a08-9b11-e0d76b491667</Id>
 				</Attributes>
 				<p.Text>input 1</p.Text>
@@ -120,15 +120,15 @@
 					<Id>d4539693-7c7b-42df-a458-78115b573036</Id>
 					<Joints>
 						<Joint0>N(ad459ee1-b10d-4ff1-add1-ed481acbc555:Value</Joint0>
-						<Joint1>|(370,220</Joint1>
+						<Joint1>|(355,165</Joint1>
 						<Joint2> N(185ae806-303f-4e65-a640-b54db5f0a265:c1t0v</Joint2>
-						<Joint3>|(400,220</Joint3>
+						<Joint3>|(385,165</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<Multiply>
 				<Attributes>
-					<Bounds>465 210 30 30</Bounds>
+					<Bounds>445 100 30 30</Bounds>
 					<Id>770a378b-264e-4c3c-9082-f99e8a7c0004</Id>
 					<Terminals>
 						<Terminal0>o=729fbd4f-b81b-44da-ab7a-0611a59be0f1</Terminal0>
@@ -142,21 +142,21 @@
 					<Id>c00ffd48-b553-408d-8fb1-7832f8417f9c</Id>
 					<Joints>
 						<Joint0>N(185ae806-303f-4e65-a640-b54db5f0a265:o</Joint0>
-						<Joint1>|(430,215</Joint1>
-						<Joint2> h(25</Joint2>
+						<Joint1>|(415,160</Joint1>
+						<Joint2> h(20</Joint2>
 						<Joint3> B(1</Joint3>
-						<Joint4> N(770a378b-264e-4c3c-9082-f99e8a7c0004:c0t0v</Joint4>
-						<Joint5>|(465,215</Joint5>
+						<Joint4> N(ba4ddd9f-8b8d-426a-80ad-078e3b91d70a:48</Joint4>
+						<Joint5>|(541,160</Joint5>
 						<Joint6> B(1</Joint6>
-						<Joint7> v(-20</Joint7>
-						<Joint8> N(ba4ddd9f-8b8d-426a-80ad-078e3b91d70a:48</Joint8>
-						<Joint9>|(631,195</Joint9>
+						<Joint7> v(-55</Joint7>
+						<Joint8> N(770a378b-264e-4c3c-9082-f99e8a7c0004:c0t0v</Joint8>
+						<Joint9>|(445,105</Joint9>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>330 265 40 15</Bounds>
+					<Bounds>385 115 40 15</Bounds>
 					<DataItem>30</DataItem>
 					<Id>d835378b-967c-4fe3-baef-4badf5775e4e</Id>
 					<Label>c4071052-187e-4441-bb81-d08c0e286290</Label>
@@ -173,7 +173,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>d835378b-967c-4fe3-baef-4badf5775e4e</AttachedTo>
-					<Bounds>272 265 53 14</Bounds>
+					<Bounds>327 115 53 14</Bounds>
 					<Id>c4071052-187e-4441-bb81-d08c0e286290</Id>
 				</Attributes>
 				<p.Text>input 1_2</p.Text>
@@ -183,17 +183,15 @@
 					<Id>4b729601-8944-4915-a537-9a17b786ddb8</Id>
 					<Joints>
 						<Joint0>N(d835378b-967c-4fe3-baef-4badf5775e4e:Value</Joint0>
-						<Joint1>|(370,270</Joint1>
-						<Joint2> h(80</Joint2>
-						<Joint3> v(-40</Joint3>
-						<Joint4> N(770a378b-264e-4c3c-9082-f99e8a7c0004:c1t0v</Joint4>
-						<Joint5>|(465,230</Joint5>
+						<Joint1>|(425,120</Joint1>
+						<Joint2> N(770a378b-264e-4c3c-9082-f99e8a7c0004:c1t0v</Joint2>
+						<Joint3>|(445,120</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<IsGreaterThan0>
 				<Attributes>
-					<Bounds>540 210 30 30</Bounds>
+					<Bounds>495 125 30 30</Bounds>
 					<Id>83aa3fa9-e119-40bb-a5bc-c3f4b525d7ff</Id>
 				</Attributes>
 			</IsGreaterThan0>
@@ -202,35 +200,35 @@
 					<Id>729fbd4f-b81b-44da-ab7a-0611a59be0f1</Id>
 					<Joints>
 						<Joint0>N(770a378b-264e-4c3c-9082-f99e8a7c0004:o</Joint0>
-						<Joint1>|(495,225</Joint1>
-						<Joint2> h(25</Joint2>
+						<Joint1>|(475,115</Joint1>
+						<Joint2> h(10</Joint2>
 						<Joint3> B(1</Joint3>
-						<Joint4> N(83aa3fa9-e119-40bb-a5bc-c3f4b525d7ff:x</Joint4>
-						<Joint5>|(540,225</Joint5>
+						<Joint4> N(3e54e28b-2224-42ba-a3bc-acbbe6e52576:48</Joint4>
+						<Joint5>|(541,115</Joint5>
 						<Joint6> B(1</Joint6>
-						<Joint7> v(45</Joint7>
-						<Joint8> N(3e54e28b-2224-42ba-a3bc-acbbe6e52576:48</Joint8>
-						<Joint9>|(631,270</Joint9>
+						<Joint7> v(25</Joint7>
+						<Joint8> N(83aa3fa9-e119-40bb-a5bc-c3f4b525d7ff:x</Joint8>
+						<Joint9>|(495,140</Joint9>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<CaseStructure>
 				<Attributes>
-					<Bounds>635 90 394 245</Bounds>
+					<Bounds>545 90 360 180</Bounds>
 					<Default>49</Default>
 					<Id>3ae8ac58-d324-474b-baa8-84e9436d8eb5</Id>
 					<Selected>49</Selected>
-					<UserSelectorBounds>153 0 88 17</UserSelectorBounds>
+					<UserSelectorBounds>136 0 88 17</UserSelectorBounds>
 				</Attributes>
 				<CaseStructure.Case>
 					<Attributes>
-						<Bounds>5 5 384 235</Bounds>
+						<Bounds>5 5 350 170</Bounds>
 						<Id>60f55f07-3b18-4f72-8275-89147da2d2a9</Id>
 						<Pattern>False</Pattern>
 					</Attributes>
 					<Comment xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>130 55 115 15</Bounds>
+							<Bounds>30 15 115 15</Bounds>
 							<Id>98305c2f-50dc-4864-bd94-1ac77f2333e2</Id>
 						</Attributes>
 						<p.Text>TODO:Fill in code</p.Text>
@@ -238,13 +236,13 @@
 				</CaseStructure.Case>
 				<CaseStructure.Case>
 					<Attributes>
-						<Bounds>5 5 384 235</Bounds>
+						<Bounds>5 5 350 170</Bounds>
 						<Id>58e21b22-4885-471d-99e6-0ff595013d19</Id>
 						<Pattern>True</Pattern>
 					</Attributes>
 					<ToByteInteger>
 						<Attributes>
-							<Bounds>25 95 30 10</Bounds>
+							<Bounds>30 60 30 10</Bounds>
 							<Id>ff67d2f6-0404-410b-96ab-25afe78f2c55</Id>
 						</Attributes>
 					</ToByteInteger>
@@ -253,21 +251,21 @@
 							<Id>3d5b5ecc-86b9-4710-b9ff-ce3428b3da0f</Id>
 							<Joints>
 								<Joint0>N(ba4ddd9f-8b8d-426a-80ad-078e3b91d70a:50</Joint0>
-								<Joint1>|(4,100</Joint1>
+								<Joint1>|(4,65</Joint1>
 								<Joint2> N(ff67d2f6-0404-410b-96ab-25afe78f2c55:number</Joint2>
-								<Joint3>|(28,100</Joint3>
+								<Joint3>|(33,65</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
 					<ForLoop>
 						<Attributes>
-							<Bounds>163 78 131 116</Bounds>
+							<Bounds>178 43 90 110</Bounds>
 							<DiagramId>23c4f6a7-d82e-4334-a8ff-f3527b59b6d9</DiagramId>
 							<Id>c0429cc1-a95c-4988-86ea-5c6e6e240113</Id>
 						</Attributes>
 						<LoopIteration>
 							<Attributes>
-								<Bounds>5 86 15 15</Bounds>
+								<Bounds>35 45 15 15</Bounds>
 								<Id>d2cce310-c971-46ed-afc6-f4403a882bc5</Id>
 							</Attributes>
 						</LoopIteration>
@@ -276,11 +274,9 @@
 								<Id>b44671b2-5799-42d8-9dc5-e3bb55e33e97</Id>
 								<Joints>
 									<Joint0>N(d2cce310-c971-46ed-afc6-f4403a882bc5:Output</Joint0>
-									<Joint1>|(20,91</Joint1>
-									<Joint2> h(94</Joint2>
-									<Joint3> v(-41</Joint3>
-									<Joint4> N(e17064a2-e91b-41aa-b9f2-78284214d5dd:i0</Joint4>
-									<Joint5>|(119,50</Joint5>
+									<Joint1>|(50,50</Joint1>
+									<Joint2> N(e17064a2-e91b-41aa-b9f2-78284214d5dd:i0</Joint2>
+									<Joint3>|(78,50</Joint3>
 								</Joints>
 							</Attributes>
 						</Wire>
@@ -298,7 +294,7 @@
 						<LoopTunnel>
 							<Attributes>
 								<AutoIndex>True</AutoIndex>
-								<Bounds>121 47 13 10</Bounds>
+								<Bounds>80 47 13 10</Bounds>
 								<Docking>Right</Docking>
 								<Id>e17064a2-e91b-41aa-b9f2-78284214d5dd</Id>
 								<Terminals>
@@ -311,13 +307,13 @@
 					</ForLoop>
 					<InRangeAndCoerce>
 						<Attributes>
-							<Bounds>120 80 30 40</Bounds>
+							<Bounds>100 45 30 40</Bounds>
 							<Id>8a4673a0-a633-408e-b711-f070d1ff9152</Id>
 						</Attributes>
 					</InRangeAndCoerce>
 					<Literal xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>65 80 45 15</Bounds>
+							<Bounds>25 45 45 15</Bounds>
 							<DataType>Int8</DataType>
 							<Id>e6552e7b-adb3-4345-9e28-e13719f31b1e</Id>
 							<Label>81c1b0be-b00a-4c42-b721-9fc1abd53e41</Label>
@@ -333,7 +329,7 @@
 					<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<AttachedTo>e6552e7b-adb3-4345-9e28-e13719f31b1e</AttachedTo>
-							<Bounds>65 62 30 15</Bounds>
+							<Bounds>25 63 30 15</Bounds>
 							<Id>81c1b0be-b00a-4c42-b721-9fc1abd53e41</Id>
 							<Visible>False</Visible>
 						</Attributes>
@@ -344,15 +340,15 @@
 							<Id>44eeb05d-6a42-4289-9cd3-4810958ac6a8</Id>
 							<Joints>
 								<Joint0>N(e6552e7b-adb3-4345-9e28-e13719f31b1e:Out</Joint0>
-								<Joint1>|(110,85</Joint1>
+								<Joint1>|(70,50</Joint1>
 								<Joint2> N(8a4673a0-a633-408e-b711-f070d1ff9152:upper limit</Joint2>
-								<Joint3>|(120,85</Joint3>
+								<Joint3>|(100,50</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
 					<Literal xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>65 110 40 15</Bounds>
+							<Bounds>25 75 40 15</Bounds>
 							<DataType>Int8</DataType>
 							<Id>971fea8a-4b8a-4403-bf1c-0a1ade5ad389</Id>
 							<Label>d3c47023-ea56-44d2-ad40-6b05de0e6b4e</Label>
@@ -368,7 +364,7 @@
 					<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 						<Attributes>
 							<AttachedTo>971fea8a-4b8a-4403-bf1c-0a1ade5ad389</AttachedTo>
-							<Bounds>65 92 30 15</Bounds>
+							<Bounds>25 93 30 15</Bounds>
 							<Id>d3c47023-ea56-44d2-ad40-6b05de0e6b4e</Id>
 							<Visible>False</Visible>
 						</Attributes>
@@ -379,9 +375,9 @@
 							<Id>118c5ca1-ac03-4008-85ad-c33737c40a7b</Id>
 							<Joints>
 								<Joint0>N(971fea8a-4b8a-4403-bf1c-0a1ade5ad389:Out</Joint0>
-								<Joint1>|(105,115</Joint1>
+								<Joint1>|(65,80</Joint1>
 								<Joint2> N(8a4673a0-a633-408e-b711-f070d1ff9152:lower limit</Joint2>
-								<Joint3>|(120,115</Joint3>
+								<Joint3>|(100,80</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
@@ -390,9 +386,9 @@
 							<Id>ead06970-5bb6-4d60-919e-885418413951</Id>
 							<Joints>
 								<Joint0>N(ff67d2f6-0404-410b-96ab-25afe78f2c55:8bit integer</Joint0>
-								<Joint1>|(55,100</Joint1>
+								<Joint1>|(60,65</Joint1>
 								<Joint2> N(8a4673a0-a633-408e-b711-f070d1ff9152:x</Joint2>
-								<Joint3>|(120,100</Joint3>
+								<Joint3>|(100,65</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
@@ -402,15 +398,15 @@
 							<Joints>
 								<Joint0>N(8a4673a0-a633-408e-b711-f070d1ff9152:coerced(x\</Joint0>
 								<Joint1></Joint1>
-								<Joint2>|(150,85</Joint2>
+								<Joint2>|(130,50</Joint2>
 								<Joint3> N(ad4bde50-b577-457b-b6eb-8ce4829e3667:57</Joint3>
-								<Joint4>|(164,85</Joint4>
+								<Joint4>|(179,50</Joint4>
 							</Joints>
 						</Attributes>
 					</Wire>
 					<AddArrayElements>
 						<Attributes>
-							<Bounds>320 115 30 30</Bounds>
+							<Bounds>295 80 30 30</Bounds>
 							<Id>9d6f9f89-697c-435e-9315-e29eae8ee17a</Id>
 						</Attributes>
 					</AddArrayElements>
@@ -419,9 +415,9 @@
 							<Id>ea6acda4-dbdf-4773-afc3-25eeeb0dd4e3</Id>
 							<Joints>
 								<Joint0>N(e17064a2-e91b-41aa-b9f2-78284214d5dd:o0</Joint0>
-								<Joint1>|(297,130</Joint1>
+								<Joint1>|(271,95</Joint1>
 								<Joint2> N(9d6f9f89-697c-435e-9315-e29eae8ee17a:numeric array</Joint2>
-								<Joint3>|(320,130</Joint3>
+								<Joint3>|(295,95</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
@@ -430,16 +426,16 @@
 							<Id>50ddf226-e8f9-4324-926b-0da6f00ca87a</Id>
 							<Joints>
 								<Joint0>N(9d6f9f89-697c-435e-9315-e29eae8ee17a:sum</Joint0>
-								<Joint1>|(350,130</Joint1>
+								<Joint1>|(325,95</Joint1>
 								<Joint2> N(d59fd120-b858-4b02-80d6-e570819b8729:50</Joint2>
-								<Joint3>|(380,130</Joint3>
+								<Joint3>|(346,95</Joint3>
 							</Joints>
 						</Attributes>
 					</Wire>
 				</CaseStructure.Case>
 				<CaseStructure.Selector>
 					<Attributes>
-						<Bounds>-4 130 13 10</Bounds>
+						<Bounds>-4 45 13 10</Bounds>
 						<Docking>Left</Docking>
 						<Id>766e5d2b-6d52-4025-b798-13d7e51bbd45</Id>
 						<Terminals>
@@ -451,7 +447,7 @@
 				</CaseStructure.Selector>
 				<CaseStructure.Tunnel>
 					<Attributes>
-						<Bounds>-4 100 13 10</Bounds>
+						<Bounds>-4 65 13 10</Bounds>
 						<Docking>Left</Docking>
 						<Id>ba4ddd9f-8b8d-426a-80ad-078e3b91d70a</Id>
 						<Terminals>
@@ -463,7 +459,7 @@
 				</CaseStructure.Tunnel>
 				<CaseStructure.Tunnel>
 					<Attributes>
-						<Bounds>-4 175 13 10</Bounds>
+						<Bounds>-4 20 13 10</Bounds>
 						<Docking>Left</Docking>
 						<Id>3e54e28b-2224-42ba-a3bc-acbbe6e52576</Id>
 						<Terminals>
@@ -475,7 +471,7 @@
 				</CaseStructure.Tunnel>
 				<CaseStructure.Tunnel>
 					<Attributes>
-						<Bounds>385 130 13 10</Bounds>
+						<Bounds>351 95 13 10</Bounds>
 						<DefaultIfUnwired>True</DefaultIfUnwired>
 						<Docking>Right</Docking>
 						<Id>d59fd120-b858-4b02-80d6-e570819b8729</Id>
@@ -492,15 +488,15 @@
 					<Id>ce2ac40d-1943-4a41-b588-e0e79d337748</Id>
 					<Joints>
 						<Joint0>N(83aa3fa9-e119-40bb-a5bc-c3f4b525d7ff:x &gt; 0?</Joint0>
-						<Joint1>|(570,225</Joint1>
+						<Joint1>|(525,140</Joint1>
 						<Joint2> N(766e5d2b-6d52-4025-b798-13d7e51bbd45:48</Joint2>
-						<Joint3>|(631,225</Joint3>
+						<Joint3>|(541,140</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<DataAccessor xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>1063 220 40 15</Bounds>
+					<Bounds>930 185 40 15</Bounds>
 					<DataItem>77</DataItem>
 					<Id>0611eefd-4992-4609-82ac-46b74ebad3f0</Id>
 					<Label>5d797e6b-e168-4740-a2c0-a5000967b0dd</Label>
@@ -517,7 +513,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>0611eefd-4992-4609-82ac-46b74ebad3f0</AttachedTo>
-					<Bounds>1108 220 39 14</Bounds>
+					<Bounds>975 185 39 14</Bounds>
 					<Id>5d797e6b-e168-4740-a2c0-a5000967b0dd</Id>
 				</Attributes>
 				<p.Text>Output</p.Text>
@@ -527,9 +523,9 @@
 					<Id>ec5ae17c-1f22-4182-9e21-ed7983b4edad</Id>
 					<Joints>
 						<Joint0>N(d59fd120-b858-4b02-80d6-e570819b8729:48</Joint0>
-						<Joint1>|(1033,225</Joint1>
+						<Joint1>|(909,190</Joint1>
 						<Joint2> N(0611eefd-4992-4609-82ac-46b74ebad3f0:Value</Joint2>
-						<Joint3>|(1066,225</Joint3>
+						<Joint3>|(933,190</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
