@@ -39,18 +39,9 @@
 			<Attributes>
 				<Id>cff531b5-72da-427d-9050-619bdd705d67</Id>
 			</Attributes>
-			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
-				<Attributes>
-					<AttachedTo>f18de4d7-89ff-4f22-8108-68bc329dffd6</AttachedTo>
-					<Bounds>174 354 92 18</Bounds>
-					<Id>daf01921-7605-4106-8128-7c3b01cb171d</Id>
-					<Visible>False</Visible>
-				</Attributes>
-				<p.Text>Data Cluster</p.Text>
-			</NodeLabel>
 			<WhileLoop>
 				<Attributes>
-					<Bounds>265 30 555 205</Bounds>
+					<Bounds>265 30 555 235</Bounds>
 					<DiagramId>5c5cf613-c8cc-4a1d-9414-60958f1250ba</DiagramId>
 					<Id>6b824d39-6976-45d5-8f5b-670c256c19a0</Id>
 				</Attributes>
@@ -62,15 +53,15 @@
 				</LoopCondition>
 				<LoopIteration>
 					<Attributes>
-						<Bounds>5 175 15 15</Bounds>
+						<Bounds>5 205 15 15</Bounds>
 						<Id>9efeab17-d56b-405d-8ad6-93658f74ba8c</Id>
 					</Attributes>
 				</LoopIteration>
 				<EventStructure>
 					<Attributes>
-						<Bounds>29 9 438 173</Bounds>
+						<Bounds>29 9 438 202</Bounds>
 						<Id>52afdbfa-0fef-4f79-9e1b-20ea859cfb3d</Id>
-						<Selected>49</Selected>
+						<Selected>498</Selected>
 						<UserSelectorBounds>20 0 398 17</UserSelectorBounds>
 					</Attributes>
 					<EventStructure.LeftDynamicEventRegistration>
@@ -86,6 +77,7 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.LeftDynamicEventRegistration>
@@ -101,12 +93,13 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.RightDynamicEventRegistration>
 					<EventStructure.EventCase>
 						<Attributes>
-							<Bounds>20 20 396 147</Bounds>
+							<Bounds>20 20 396 176</Bounds>
 							<Id>952324ff-df7e-40fc-adcf-4643da8076ba</Id>
 						</Attributes>
 						<EventStructure.AttachedEvent>
@@ -225,6 +218,7 @@
 								<Bounds>341 76 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>ae314274-595d-4365-a9a3-efcf6d37e26e</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -359,7 +353,354 @@
 					</EventStructure.EventCase>
 					<EventStructure.EventCase>
 						<Attributes>
-							<Bounds>20 20 396 147</Bounds>
+							<Bounds>20 20 396 176</Bounds>
+							<Id>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2</Id>
+						</Attributes>
+						<EventStructure.EventData>
+							<Attributes>
+								<Bounds>0 101 92 50</Bounds>
+								<HasErrorTerminals>False</HasErrorTerminals>
+								<Id>79d6214b-da82-402c-903b-0d2da4e3a712</Id>
+								<InstanceDataType>@85d4d131e8e04ec68556abda53283871</InstanceDataType>
+								<Mode>InstanceProperties</Mode>
+								<PropertyPathsInSemanticOrder>Time,Index,Control Reference,Old Value,New Value</PropertyPathsInSemanticOrder>
+								<Template>List</Template>
+							</Attributes>
+							<PropertyItemTerminal xmlns="http://www.ni.com/MocCommon">
+								<Attributes>
+									<DataType>Double</DataType>
+									<Hotspot>92 15</Hotspot>
+									<Id>4fc14913-955e-41f7-ac00-ef1e9b71bb6e</Id>
+									<Path>Old Value</Path>
+									<PathElementMemberKinds>Field</PathElementMemberKinds>
+									<Usage>Optional</Usage>
+								</Attributes>
+							</PropertyItemTerminal>
+							<EventPropertyItemTerminal>
+								<Attributes>
+									<DataType>Double</DataType>
+									<Hotspot>92 30</Hotspot>
+									<Id>cde53382-7596-4cbe-a76d-937dacd4d12a</Id>
+									<Path>New Value</Path>
+									<PathElementMemberKinds>Field</PathElementMemberKinds>
+									<Usage>Optional</Usage>
+								</Attributes>
+							</EventPropertyItemTerminal>
+						</EventStructure.EventData>
+						<Literal xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>181 86 145 15</Bounds>
+								<DataType>String</DataType>
+								<Id>1c8e0564-56cb-48a1-bc35-087e34b0e784</Id>
+								<Label>5dd19e53-f412-48aa-a666-834be942b22e</Label>
+							</Attributes>
+							<p.Data>NumericDoSomething</p.Data>
+							<StringBehavior>
+								<Attributes>
+									<TextDisplayMode>Default</TextDisplayMode>
+								</Attributes>
+							</StringBehavior>
+						</Literal>
+						<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<AttachedTo>1c8e0564-56cb-48a1-bc35-087e34b0e784</AttachedTo>
+								<Bounds>181 65 64 18</Bounds>
+								<Id>5dd19e53-f412-48aa-a666-834be942b22e</Id>
+								<Visible>False</Visible>
+							</Attributes>
+							<p.Text>Message</p.Text>
+						</NodeLabel>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>162673a5-cd55-4fd2-b5af-b76682fa5ca9</Id>
+								<Joints>
+									<Joint0>N(1c8e0564-56cb-48a1-bc35-087e34b0e784:Out</Joint0>
+									<Joint1>|(326,91</Joint1>
+									<Joint2> N(223e9968-3950-4c5b-b87d-a8fd6e231a10:L1</Joint2>
+									<Joint3>|(341,91</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>69c0981f-978e-4b78-a028-47b78205f9cf</Id>
+								<Joints>
+									<Joint0>N(e49e66a2-cc8c-41a7-94a4-7545b16572b0:498</Joint0>
+									<Joint1>|(3,71</Joint1>
+									<Joint2> h(333</Joint2>
+									<Joint3> v(10</Joint3>
+									<Joint4> N(223e9968-3950-4c5b-b87d-a8fd6e231a10:L0</Joint4>
+									<Joint5>|(341,81</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<MethodCall xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>341 76 40 40</Bounds>
+								<DomainName>NI.MocCommon</DomainName>
+								<Id>223e9968-3950-4c5b-b87d-a8fd6e231a10</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
+								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
+							</Attributes>
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter>
+										<Attributes>
+											<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+											<Desc>message queue in</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+											<Desc>message</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>c5349368-7bef-4725-a0fd-5b91244a41be</Id>
+											<Desc>message data</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>280b8c34-2d95-43b6-a75a-0232edfed7b4</Id>
+											<Desc>error in</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>d131e34c-3a79-46f4-9533-9a92abaa93e6</Id>
+											<Desc>priority message</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+											<Desc>message queue out</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e633336-e17a-4739-84b5-d04729bb939c</Id>
+											<Desc>error out</Desc>
+										</Attributes>
+									</Parameter>
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Boolean</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>15 40</Hotspot>
+									<Id>d131e34c-3a79-46f4-9533-9a92abaa93e6</Id>
+									<Usage>Optional</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@e2ffceb886a9413aa8b7aa2303eb0b4b</DataType>
+									<Direction>Input</Direction>
+									<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+									<Usage>Required</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>String</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 15</Hotspot>
+									<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+									<Usage>Required</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@bd2232353db34e3ebe062acdcac878ce</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 25</Hotspot>
+									<Id>c5349368-7bef-4725-a0fd-5b91244a41be</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Error</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 35</Hotspot>
+									<Id>280b8c34-2d95-43b6-a75a-0232edfed7b4</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@e2ffceb886a9413aa8b7aa2303eb0b4b</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 5</Hotspot>
+									<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Error</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 35</Hotspot>
+									<Id>8e633336-e17a-4739-84b5-d04729bb939c</Id>
+								</Attributes>
+							</Terminal>
+						</MethodCall>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>3cc9d3a2-b1b6-4c61-9ded-2eaa1d2043e8</Id>
+								<Joints>
+									<Joint0>N(223e9968-3950-4c5b-b87d-a8fd6e231a10:R3</Joint0>
+									<Joint1>|(381,111</Joint1>
+									<Joint2> h(14</Joint2>
+									<Joint3> N(5e33d184-8e1e-46ca-b41d-5676ea252d57:498</Joint3>
+									<Joint4>|(395,101</Joint4>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>f0052ea9-7f70-4b20-9736-9ac98ba8341c</Id>
+								<Joints>
+									<Joint0>N(223e9968-3950-4c5b-b87d-a8fd6e231a10:R0</Joint0>
+									<Joint1>|(381,81</Joint1>
+									<Joint2> h(14</Joint2>
+									<Joint3> N(7b3c41c4-d840-4f12-a4bb-e45ce32c0ee8:498</Joint3>
+									<Joint4>|(395,71</Joint4>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<EventStructure.AttachedEvent>
+							<Attributes>
+								<EventId>{F3226E31-E688-4C58-AE1E-7ED6718409A1}</EventId>
+								<EventIndex>2</EventIndex>
+								<EventName>Value changed</EventName>
+								<EventSourceType>Content</EventSourceType>
+								<EventType>@e4a40d300061421aab080f451a0f27c1</EventType>
+								<SourceContent>495</SourceContent>
+								<SourceName>My Numeric Do Something</SourceName>
+							</Attributes>
+						</EventStructure.AttachedEvent>
+						<DataAccessor xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>166 26 40 15</Bounds>
+								<DataItem>493</DataItem>
+								<Id>e50993ad-5147-4e1a-b19d-9b0624c647d6</Id>
+								<Label>54cbc5d0-9504-4178-828d-3f0340d827d8</Label>
+							</Attributes>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Double</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 5</Hotspot>
+									<Id>Value</Id>
+								</Attributes>
+							</Terminal>
+						</DataAccessor>
+						<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<AttachedTo>e50993ad-5147-4e1a-b19d-9b0624c647d6</AttachedTo>
+								<Bounds>13 26 148 14</Bounds>
+								<Id>54cbc5d0-9504-4178-828d-3f0340d827d8</Id>
+							</Attributes>
+							<p.Text>My Numeric Do Something</p.Text>
+						</NodeLabel>
+						<MethodCall xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>265 116 40 40</Bounds>
+								<DomainName>NI.MocCommon</DomainName>
+								<Id>cd30f483-6898-46c7-85bf-b1da004f7c5d</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\NumericDoSomething.gvi"</ResolveFailedHint>
+								<Target>NumericDoSomething\.gvi</Target>
+							</Attributes>
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter>
+										<Attributes>
+											<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+											<Desc>oldValue</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+											<Desc>newValue</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+											<Desc>message data</Desc>
+										</Attributes>
+									</Parameter>
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Double</DataType>
+									<Direction>Input</Direction>
+									<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Double</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 15</Hotspot>
+									<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@bd2232353db34e3ebe062acdcac878ce</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 5</Hotspot>
+									<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+								</Attributes>
+							</Terminal>
+						</MethodCall>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>b93a916a-0702-46a6-ab70-97e92b5e837c</Id>
+								<Joints>
+									<Joint0>N(cd30f483-6898-46c7-85bf-b1da004f7c5d:R0</Joint0>
+									<Joint1>|(305,121</Joint1>
+									<Joint2> h(26</Joint2>
+									<Joint3> v(-20</Joint3>
+									<Joint4> N(223e9968-3950-4c5b-b87d-a8fd6e231a10:L2</Joint4>
+									<Joint5>|(341,101</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>95262221-0562-4b34-8e09-446948641be5</Id>
+								<Joints>
+									<Joint0>N(79d6214b-da82-402c-903b-0d2da4e3a712:c1t0v</Joint0>
+									<Joint1>|(92,131</Joint1>
+									<Joint2> N(cd30f483-6898-46c7-85bf-b1da004f7c5d:L1</Joint2>
+									<Joint3>|(265,131</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>57943657-12ab-4be6-be9e-d65b662aea00</Id>
+								<Joints>
+									<Joint0>N(79d6214b-da82-402c-903b-0d2da4e3a712:c0t0v</Joint0>
+									<Joint1>|(92,116</Joint1>
+									<Joint2> h(10</Joint2>
+									<Joint3> v(5</Joint3>
+									<Joint4> N(cd30f483-6898-46c7-85bf-b1da004f7c5d:L0</Joint4>
+									<Joint5>|(265,121</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
+					</EventStructure.EventCase>
+					<EventStructure.EventCase>
+						<Attributes>
+							<Bounds>20 20 396 176</Bounds>
 							<Id>092b3bef-74c0-4159-9e9b-a6e3e8f4b448</Id>
 						</Attributes>
 						<EventStructure.AttachedEvent>
@@ -502,6 +843,7 @@
 								<Bounds>341 76 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>4c83d46b-50b6-4631-9c1c-a9ee76fb10c4</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -612,7 +954,7 @@
 					</EventStructure.EventCase>
 					<EventStructure.EventCase>
 						<Attributes>
-							<Bounds>20 20 396 147</Bounds>
+							<Bounds>20 20 396 176</Bounds>
 							<Id>813e6db8-2d3c-4ff5-81f2-12ca7550e53d</Id>
 						</Attributes>
 						<EventStructure.AttachedEvent>
@@ -743,6 +1085,7 @@
 								<Bounds>341 66 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>72d121d2-685a-4ada-9eba-e8cc1f6e273b</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -874,7 +1217,7 @@
 					</EventStructure.EventCase>
 					<EventStructure.EventCase>
 						<Attributes>
-							<Bounds>20 20 396 147</Bounds>
+							<Bounds>20 20 396 176</Bounds>
 							<Id>033454ea-2724-43a3-9301-e12cdc142f65</Id>
 						</Attributes>
 						<EventStructure.AttachedEvent>
@@ -1031,6 +1374,7 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65=38b29825-ef47-4176-af27-573be561697c</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.Tunnel>
@@ -1046,6 +1390,7 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d=d8ab2878-d7b1-4ecc-8417-f7d7a9718484</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65=485b6120-b5cf-456c-8706-97a21f83c0ca</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98=274714f2-72c6-4215-b4b1-c85a6ef48233</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2=69c0981f-978e-4b78-a028-47b78205f9cf</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.Tunnel>
@@ -1061,6 +1406,7 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d=725da093-ab62-487e-b6fe-0f877c77c5b9</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2=3cc9d3a2-b1b6-4c61-9ded-2eaa1d2043e8</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.Tunnel>
@@ -1078,12 +1424,13 @@
 								<Terminal3>813e6db8-2d3c-4ff5-81f2-12ca7550e53d=465672db-50d1-4dbc-813d-c6cc6584272d</Terminal3>
 								<Terminal4>033454ea-2724-43a3-9301-e12cdc142f65=485b6120-b5cf-456c-8706-97a21f83c0ca</Terminal4>
 								<Terminal5>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98=274714f2-72c6-4215-b4b1-c85a6ef48233</Terminal5>
+								<Terminal6>f5c04a6d-aeab-4448-ab5a-0b7d42f02bf2=f0052ea9-7f70-4b20-9736-9ac98ba8341c</Terminal6>
 							</Terminals>
 						</Attributes>
 					</EventStructure.Tunnel>
 					<EventStructure.EventCase>
 						<Attributes>
-							<Bounds>20 20 396 147</Bounds>
+							<Bounds>20 20 396 176</Bounds>
 							<Id>d1ee7af6-45cf-4b98-aa18-a8f845d6bd98</Id>
 						</Attributes>
 						<EventStructure.AttachedEvent>
@@ -1188,6 +1535,7 @@
 						<DomainName>NI.MocCommon</DomainName>
 						<Id>8f8ab5c4-3545-46f7-831a-27d9f5e5bb19</Id>
 						<Label>31fbac7a-3422-4c08-949e-cd9956cfa009</Label>
+						<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Error Handler - Event Handling Loop.gvi"</ResolveFailedHint>
 						<Target>Error\ Handler\ \-\ Event\ Handling\ Loop\.gvi</Target>
 					</Attributes>
 					<p.MethodDeclaration>
@@ -1401,7 +1749,7 @@
 			</WhileLoop>
 			<WhileLoop>
 				<Attributes>
-					<Bounds>265 250 720 405</Bounds>
+					<Bounds>265 280 720 405</Bounds>
 					<DiagramId>1ea37e4a-bc42-49e5-9d07-7095f29fdfe4</DiagramId>
 					<Id>08a7efea-53a0-49e9-b066-4ffb28aafe7f</Id>
 				</Attributes>
@@ -1425,7 +1773,7 @@
 						<Id>0d970d18-c0ea-483f-aa8e-9fd4e1c6cc9d</Id>
 						<IgnoreUpperLowerCase>True</IgnoreUpperLowerCase>
 						<Label>f12d8a8b-1a51-4276-9fda-49d6bf585e27</Label>
-						<Selected>116</Selected>
+						<Selected>531</Selected>
 						<UserSelectorBounds>152 0 193 17</UserSelectorBounds>
 					</Attributes>
 					<CaseStructure.Case>
@@ -1599,6 +1947,7 @@
 								<Bounds>346 245 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>c34ebd62-2ddb-4cfd-9e63-1116e0e93a13</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -1847,6 +2196,7 @@
 								<Bounds>266 245 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>f231bf55-472c-4e9c-8dd4-9bb79e5928b4</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -1954,6 +2304,332 @@
 								</Attributes>
 							</Terminal>
 						</MethodCall>
+					</CaseStructure.Case>
+					<CaseStructure.Case>
+						<Attributes>
+							<Bounds>5 5 486 325</Bounds>
+							<Id>d2b2970e-0e87-46e7-9e17-39367cb95422</Id>
+							<Pattern>"NumericDoSomething"</Pattern>
+						</Attributes>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>4facb104-af88-4f56-8516-d0393e9d8c40</Id>
+								<Joints>
+									<Joint0>N(0b2fb3ba-4dcf-49c1-8c89-6bc3a00c0383:531</Joint0>
+									<Joint1>|(4,250</Joint1>
+									<Joint2> h(7</Joint2>
+									<Joint3> v(-75</Joint3>
+									<Joint4> h(374</Joint4>
+									<Joint5> v(75</Joint5>
+									<Joint6> N(85b92508-744e-4e97-87cc-dc478c0001db:L0</Joint6>
+									<Joint7>|(426,250</Joint7>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>61c8d418-bc09-4831-9180-78e794a47278</Id>
+								<Joints>
+									<Joint0>N(85b92508-744e-4e97-87cc-dc478c0001db:R3</Joint0>
+									<Joint1>|(466,280</Joint1>
+									<Joint2> N(33522640-75b8-40dd-bc99-c3c347dff719:531</Joint2>
+									<Joint3>|(482,280</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>9547f301-7d96-4c51-8e60-ab8fd00f8588</Id>
+								<Joints>
+									<Joint0>N(851e422a-39f0-421c-903a-f91bc9a3c0e9:531</Joint0>
+									<Joint1>|(4,80</Joint1>
+									<Joint2> N(24595ca6-b9c4-4009-aa3f-4fb616092af8:531</Joint2>
+									<Joint3>|(482,80</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<MethodCall xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>426 245 40 40</Bounds>
+								<DomainName>NI.MocCommon</DomainName>
+								<Id>85b92508-744e-4e97-87cc-dc478c0001db</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
+								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
+							</Attributes>
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter>
+										<Attributes>
+											<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+											<Desc>message queue in</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+											<Desc>message</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>c5349368-7bef-4725-a0fd-5b91244a41be</Id>
+											<Desc>message data</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>280b8c34-2d95-43b6-a75a-0232edfed7b4</Id>
+											<Desc>error in</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>d131e34c-3a79-46f4-9533-9a92abaa93e6</Id>
+											<Desc>priority message</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+											<Desc>message queue out</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e633336-e17a-4739-84b5-d04729bb939c</Id>
+											<Desc>error out</Desc>
+										</Attributes>
+									</Parameter>
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Boolean</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>15 40</Hotspot>
+									<Id>d131e34c-3a79-46f4-9533-9a92abaa93e6</Id>
+									<Usage>Optional</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@e2ffceb886a9413aa8b7aa2303eb0b4b</DataType>
+									<Direction>Input</Direction>
+									<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+									<Usage>Required</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>String</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 15</Hotspot>
+									<Id>1e890289-d548-4a77-9f21-b6ccb87cfc18</Id>
+									<Usage>Required</Usage>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@bd2232353db34e3ebe062acdcac878ce</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 25</Hotspot>
+									<Id>c5349368-7bef-4725-a0fd-5b91244a41be</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Error</DataType>
+									<Direction>Input</Direction>
+									<Hotspot>0 35</Hotspot>
+									<Id>280b8c34-2d95-43b6-a75a-0232edfed7b4</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>@e2ffceb886a9413aa8b7aa2303eb0b4b</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 5</Hotspot>
+									<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Error</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 35</Hotspot>
+									<Id>8e633336-e17a-4739-84b5-d04729bb939c</Id>
+								</Attributes>
+							</Terminal>
+						</MethodCall>
+						<VariantToData>
+							<Attributes>
+								<Bounds>126 245 40 40</Bounds>
+								<Id>076df092-29f9-42dc-b880-ffd206efeae4</Id>
+							</Attributes>
+						</VariantToData>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>ac035388-9861-4451-a97a-0a0960c0a8b1</Id>
+								<Joints>
+									<Joint0>N(b261e0dd-5a51-4ecb-ac5c-5e1f7cc1f02f:531</Joint0>
+									<Joint1>|(4,280</Joint1>
+									<Joint2> N(076df092-29f9-42dc-b880-ffd206efeae4:error in (no error\</Joint2>
+									<Joint3></Joint3>
+									<Joint4>|(126,280</Joint4>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>fb7b032a-379f-4f0d-bd24-3a3969e39903</Id>
+								<Joints>
+									<Joint0>N(076df092-29f9-42dc-b880-ffd206efeae4:error out</Joint0>
+									<Joint1>|(166,280</Joint1>
+									<Joint2> N(85b92508-744e-4e97-87cc-dc478c0001db:L3</Joint2>
+									<Joint3>|(426,280</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Literal xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>56 235 40 15</Bounds>
+								<DataType>Double</DataType>
+								<Id>45ae5bde-7a5c-4435-908a-ccc2b35258a8</Id>
+								<Label>7bc76934-b196-4065-b572-afe2cdf84398</Label>
+							</Attributes>
+							<p.Data>0x0</p.Data>
+							<NumericBehavior>
+								<Attributes>
+									<Interpretation>Exact</Interpretation>
+									<ValueFormatter>LV:G6</ValueFormatter>
+								</Attributes>
+							</NumericBehavior>
+						</Literal>
+						<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<AttachedTo>45ae5bde-7a5c-4435-908a-ccc2b35258a8</AttachedTo>
+								<Bounds>56 217 30 15</Bounds>
+								<Id>7bc76934-b196-4065-b572-afe2cdf84398</Id>
+								<Visible>False</Visible>
+							</Attributes>
+							<p.Text>My Numeric Do Something_2</p.Text>
+						</NodeLabel>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>6df87a5e-c761-4742-b42b-94291d70a2a6</Id>
+								<Joints>
+									<Joint0>N(9060cb46-b50c-43c6-af8c-9f3d17c0fba7:531</Joint0>
+									<Joint1>|(4,270</Joint1>
+									<Joint2> h(117</Joint2>
+									<Joint3> v(-20</Joint3>
+									<Joint4> N(076df092-29f9-42dc-b880-ffd206efeae4:variant</Joint4>
+									<Joint5>|(126,250</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>57a273a2-8181-4317-957b-b723a3df48dc</Id>
+								<Joints>
+									<Joint0>N(45ae5bde-7a5c-4435-908a-ccc2b35258a8:Out</Joint0>
+									<Joint1>|(96,240</Joint1>
+									<Joint2> h(45</Joint2>
+									<Joint3> N(076df092-29f9-42dc-b880-ffd206efeae4:type</Joint3>
+									<Joint4>|(141,245</Joint4>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<MethodCall xmlns="http://www.ni.com/MocCommon">
+							<Attributes>
+								<Bounds>236 245 40 40</Bounds>
+								<DomainName>NI.MocCommon</DomainName>
+								<Id>629cba66-1dc0-49dd-8f67-629dcb50b891</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\Function.gvi"</ResolveFailedHint>
+								<Target>Function\.gvi</Target>
+							</Attributes>
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter>
+										<Attributes>
+											<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+											<Desc>data</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+											<Desc>Message</Desc>
+										</Attributes>
+									</Parameter>
+									<Parameter>
+										<Attributes>
+											<Id>87b817cc-0cb8-4bf3-bc22-f25cf227844b</Id>
+											<Desc>display string</Desc>
+										</Attributes>
+									</Parameter>
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>Double</DataType>
+									<Direction>Input</Direction>
+									<Id>896e2d74-bc91-4da5-b6ef-ddef017c65d4</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>String</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 5</Hotspot>
+									<Id>8e39b7f5-4f8e-4e6f-894e-8a7b15b0f7e5</Id>
+								</Attributes>
+							</Terminal>
+							<Terminal xmlns="http://www.ni.com/PlatformFramework">
+								<Attributes>
+									<DataType>String</DataType>
+									<Direction>Output</Direction>
+									<Hotspot>40 15</Hotspot>
+									<Id>87b817cc-0cb8-4bf3-bc22-f25cf227844b</Id>
+								</Attributes>
+							</Terminal>
+						</MethodCall>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>bcfc308f-c72f-41a1-ac34-dc2562f1c030</Id>
+								<Joints>
+									<Joint0>N(076df092-29f9-42dc-b880-ffd206efeae4:data</Joint0>
+									<Joint1>|(166,250</Joint1>
+									<Joint2> N(629cba66-1dc0-49dd-8f67-629dcb50b891:L0</Joint2>
+									<Joint3>|(236,250</Joint3>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>8e4b6254-e636-4b8e-80cf-e05be07e9967</Id>
+								<Joints>
+									<Joint0>N(629cba66-1dc0-49dd-8f67-629dcb50b891:R0</Joint0>
+									<Joint1>|(276,250</Joint1>
+									<Joint2> h(85</Joint2>
+									<Joint3> v(10</Joint3>
+									<Joint4> N(85b92508-744e-4e97-87cc-dc478c0001db:L1</Joint4>
+									<Joint5>|(426,260</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
+						<Wire xmlns="http://www.ni.com/PlatformFramework">
+							<Attributes>
+								<Id>a81d3607-f516-40e7-8c22-873009b91336</Id>
+								<Joints>
+									<Joint0>N(629cba66-1dc0-49dd-8f67-629dcb50b891:R1</Joint0>
+									<Joint1>|(276,260</Joint1>
+									<Joint2> h(10</Joint2>
+									<Joint3> v(10</Joint3>
+									<Joint4> N(85b92508-744e-4e97-87cc-dc478c0001db:L2</Joint4>
+									<Joint5>|(426,270</Joint5>
+								</Joints>
+							</Attributes>
+						</Wire>
 					</CaseStructure.Case>
 					<CaseStructure.Case>
 						<Attributes>
@@ -2095,6 +2771,7 @@
 								<Bounds>276 245 40 40</Bounds>
 								<DomainName>NI.MocCommon</DomainName>
 								<Id>86c18781-c490-4d0a-a59c-da9e91ebe80c</Id>
+								<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Enqueue Message (Single).gvi"</ResolveFailedHint>
 								<Target>Enqueue\ Message\ \(Single\)\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -2456,7 +3133,7 @@
 								<DomainName>NI:G Core:Error</DomainName>
 								<Id>24b8d6e4-75dc-42ff-a5df-8178f8e362ac</Id>
 								<Label>71a29f6c-54a9-4e77-b119-b9928ee47273</Label>
-								<ResolveFailedHint>Display Error.gvi, Package: (NI G Standard Library, Version: 1.0.5.17)</ResolveFailedHint>
+								<ResolveFailedHint>Display Error.gvi, Package: (LabVIEW NXG G Standard Library Files, Version: 2.0.0)</ResolveFailedHint>
 								<Target>NI:G\ Core:Error:Display\ Error\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -2955,7 +3632,7 @@
 								<Bounds>261 205 40 40</Bounds>
 								<DomainName>NI:G Core:Error</DomainName>
 								<Id>11bbb800-ed4d-442a-bf23-4afd797b00d8</Id>
-								<ResolveFailedHint>Build Error Cluster.gvi, Package: (NI G Standard Library, Version: 1.0.5.17)</ResolveFailedHint>
+								<ResolveFailedHint>Build Error Cluster.gvi, Package: (LabVIEW NXG G Standard Library Files, Version: 2.0.0)</ResolveFailedHint>
 								<Target>NI:G\ Core:Error:Build\ Error\ Cluster\.gvi</Target>
 							</Attributes>
 							<p.MethodDeclaration>
@@ -3102,6 +3779,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091=b0ae3baa-ff58-4af1-8567-b54eb5aac441</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Selector>
@@ -3120,6 +3798,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=68135adf-1a56-4cad-b576-b6e8ff4875d3</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=4facb104-af88-4f56-8516-d0393e9d8c40</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3138,6 +3817,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc=fc828de5-3dba-4012-9564-2527f544b993</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=e3354521-1605-4ec1-96fc-a18efb13c3fb</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=ac035388-9861-4451-a97a-0a0960c0a8b1</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3157,6 +3837,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc=e4d6622b-7c84-4dd3-be3d-b89d2f21e391</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=11ec3fb3-925f-4776-a72e-a1dd40306467</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091=ed26ccff-3017-4058-94f0-9f10b138e955</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=61c8d418-bc09-4831-9180-78e794a47278</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3175,6 +3856,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc=634b4ba0-a4e7-4a22-9b24-d54f212b2aa0</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=396cd0f0-25cf-47ae-ab3c-e8fd397a26ff</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091=0fa63336-3f83-4b2b-8943-6152541c7780</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=9547f301-7d96-4c51-8e60-ab8fd00f8588</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3194,6 +3876,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc=634b4ba0-a4e7-4a22-9b24-d54f212b2aa0</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=396cd0f0-25cf-47ae-ab3c-e8fd397a26ff</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091=0fa63336-3f83-4b2b-8943-6152541c7780</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=9547f301-7d96-4c51-8e60-ab8fd00f8588</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3213,6 +3896,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=75106f38-2954-4170-9747-2e40695caac7</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3231,6 +3915,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422=6df87a5e-c761-4742-b42b-94291d70a2a6</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3249,6 +3934,7 @@
 								<Terminal6>9d347c20-7037-4d4b-8d4d-31155e3c9edc</Terminal6>
 								<Terminal7>b132009d-638a-42e7-aadf-9a2c703b61b6=c1253e25-5d16-446e-beda-10f8372bfd5d</Terminal7>
 								<Terminal8>b18e9afb-9642-4404-9c7f-d578d7230091</Terminal8>
+								<Terminal9>d2b2970e-0e87-46e7-9e17-39367cb95422</Terminal9>
 							</Terminals>
 						</Attributes>
 					</CaseStructure.Tunnel>
@@ -3268,6 +3954,7 @@
 						<DomainName>NI.MocCommon</DomainName>
 						<Id>fa79a193-9d1f-4ee3-86ac-dc0ecd8cb057</Id>
 						<Label>133061c5-1e16-474a-b369-cc2fafc568ea</Label>
+						<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Error Handler - Message Handling Loop.gvi"</ResolveFailedHint>
 						<Target>Error\ Handler\ \-\ Message\ Handling\ Loop\.gvi</Target>
 					</Attributes>
 					<p.MethodDeclaration>
@@ -3521,6 +4208,7 @@
 						<Bounds>40 290 40 40</Bounds>
 						<DomainName>NI.MocCommon</DomainName>
 						<Id>be81fb0a-8a70-4822-ac77-de8b7c03c88b</Id>
+						<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Dequeue Message.gvi"</ResolveFailedHint>
 						<Target>Dequeue\ Message\.gvi</Target>
 					</Attributes>
 					<p.MethodDeclaration>
@@ -3682,7 +4370,7 @@
 			</WhileLoop>
 			<MergeErrors>
 				<Attributes>
-					<Bounds>1030 565 30 20</Bounds>
+					<Bounds>1030 595 30 20</Bounds>
 					<Id>c4e19c1f-9a9a-4286-9ca2-8af907eb2bd8</Id>
 					<Terminals>
 						<Terminal0>error out=84a42ae1-3fd8-48b4-831b-cd029099476c</Terminal0>
@@ -3693,7 +4381,7 @@
 			</MergeErrors>
 			<PropertyNode xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>185 535 50 35</Bounds>
+					<Bounds>185 565 50 35</Bounds>
 					<HasErrorTerminals>False</HasErrorTerminals>
 					<Id>808672b7-1594-4ce1-a1f5-637f34477b8d</Id>
 					<InstanceDataType>@21aa65d43fd047a4a6269c77b80e4fe2</InstanceDataType>
@@ -3736,7 +4424,7 @@
 			</RegisterForEvents>
 			<Comment xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>110 695 895 80</Bounds>
+					<Bounds>110 725 895 80</Bounds>
 					<Id>7fba53df-cf6b-465b-abb1-7192f4909f3f</Id>
 					<SizeToText>False</SizeToText>
 				</Attributes>
@@ -3744,7 +4432,7 @@
 			</Comment>
 			<Comment xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>110 255 125 110</Bounds>
+					<Bounds>110 285 125 110</Bounds>
 					<Id>c2f48d36-0c02-4a0b-b885-2153c0c3015f</Id>
 					<SizeToText>False</SizeToText>
 				</Attributes>
@@ -3777,9 +4465,9 @@
 					<Id>09f5d37c-e7b7-4a5d-bc54-2e532bcd9e00</Id>
 					<Joints>
 						<Joint0>N(f18de4d7-89ff-4f22-8108-68bc329dffd6:Out</Joint0>
-						<Joint1>|(235,380</Joint1>
+						<Joint1>|(235,410</Joint1>
 						<Joint2> N(11b129c8-c74b-4222-a474-aa87111b91e6:o0</Joint2>
-						<Joint3>|(261,380</Joint3>
+						<Joint3>|(261,410</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3803,9 +4491,9 @@
 						<Joint0>N(6a1c15a0-7867-4aee-afd2-a04fe09f209e:error out</Joint0>
 						<Joint1>|(885,165</Joint1>
 						<Joint2> h(110</Joint2>
-						<Joint3> v(405</Joint3>
+						<Joint3> v(435</Joint3>
 						<Joint4> N(c4e19c1f-9a9a-4286-9ca2-8af907eb2bd8:c0t0v</Joint4>
-						<Joint5>|(1030,570</Joint5>
+						<Joint5>|(1030,600</Joint5>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3814,9 +4502,9 @@
 					<Id>84a42ae1-3fd8-48b4-831b-cd029099476c</Id>
 					<Joints>
 						<Joint0>N(c4e19c1f-9a9a-4286-9ca2-8af907eb2bd8:error out</Joint0>
-						<Joint1>|(1060,570</Joint1>
+						<Joint1>|(1060,600</Joint1>
 						<Joint2> N(3ae51fe1-b988-428a-b60d-6c0487ad634e:error in</Joint2>
-						<Joint3>|(1070,570</Joint3>
+						<Joint3>|(1070,600</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3825,9 +4513,9 @@
 					<Id>53d6e98e-cdaf-4946-84d1-90fe474abee5</Id>
 					<Joints>
 						<Joint0>N(89f22ce4-f59e-41be-8050-ecc84631c17f:error out</Joint0>
-						<Joint1>|(85,580</Joint1>
+						<Joint1>|(85,610</Joint1>
 						<Joint2> N(a485fbb9-58c9-4ba8-9605-27380f0d9b06:L3</Joint2>
-						<Joint3>|(110,580</Joint3>
+						<Joint3>|(110,610</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3836,13 +4524,13 @@
 					<Id>fd95f07f-fd1f-49c7-99ef-1c5670d4b444</Id>
 					<Joints>
 						<Joint0>N(808672b7-1594-4ce1-a1f5-637f34477b8d:c0t0v</Joint0>
-						<Joint1>|(235,550</Joint1>
+						<Joint1>|(235,580</Joint1>
 						<Joint2> h(15</Joint2>
 						<Joint3> B(1</Joint3>
 						<Joint4> N(14b8c723-013b-43fa-bcab-2ef6f869609f:o0</Joint4>
-						<Joint5>|(261,550</Joint5>
+						<Joint5>|(261,580</Joint5>
 						<Joint6> B(1</Joint6>
-						<Joint7> v(-415</Joint7>
+						<Joint7> v(-445</Joint7>
 						<Joint8> N(02c93fd1-d433-463e-bc63-c77d4e8f7e29:o0</Joint8>
 						<Joint9>|(261,135</Joint9>
 					</Joints>
@@ -3853,9 +4541,9 @@
 					<Id>ef869c82-55e4-4690-83b9-afe9c1f4e18d</Id>
 					<Joints>
 						<Joint0>N(8d279c0a-b1e1-419e-b43c-32d72625e049:o0</Joint0>
-						<Joint1>|(989,580</Joint1>
+						<Joint1>|(989,610</Joint1>
 						<Joint2> N(c4e19c1f-9a9a-4286-9ca2-8af907eb2bd8:c1t0v</Joint2>
-						<Joint3>|(1030,580</Joint3>
+						<Joint3>|(1030,610</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3864,11 +4552,11 @@
 					<Id>c4bb6191-cbc1-4062-9e02-745d0b804ddb</Id>
 					<Joints>
 						<Joint0>N(a485fbb9-58c9-4ba8-9605-27380f0d9b06:R0</Joint0>
-						<Joint1>|(150,550</Joint1>
+						<Joint1>|(150,580</Joint1>
 						<Joint2> h(15</Joint2>
 						<Joint3> v(-10</Joint3>
 						<Joint4> N(808672b7-1594-4ce1-a1f5-637f34477b8d:instance in</Joint4>
-						<Joint5>|(185,540</Joint5>
+						<Joint5>|(185,570</Joint5>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3877,9 +4565,9 @@
 					<Id>ccfe8597-253a-4bf9-be22-6be3430d95e8</Id>
 					<Joints>
 						<Joint0>N(a485fbb9-58c9-4ba8-9605-27380f0d9b06:R3</Joint0>
-						<Joint1>|(150,580</Joint1>
+						<Joint1>|(150,610</Joint1>
 						<Joint2> N(cf6dfdcb-e27d-4325-8190-b131d4de0203:o0</Joint2>
-						<Joint3>|(261,580</Joint3>
+						<Joint3>|(261,610</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
@@ -3888,15 +4576,15 @@
 					<Id>e76db76b-fa2b-478c-a4df-6f649a5d129a</Id>
 					<Joints>
 						<Joint0>N(89f22ce4-f59e-41be-8050-ecc84631c17f:user event out</Joint0>
-						<Joint1>|(85,550</Joint1>
+						<Joint1>|(85,580</Joint1>
 						<Joint2> h(15</Joint2>
 						<Joint3> B(1</Joint3>
 						<Joint4> v(-65</Joint4>
 						<Joint5> B(2</Joint5>
 						<Joint6> N(41871507-89a7-4a42-9242-e399d621dad3:o0</Joint6>
-						<Joint7>|(261,485</Joint7>
+						<Joint7>|(261,515</Joint7>
 						<Joint8> B(2</Joint8>
-						<Joint9> v(-340</Joint9>
+						<Joint9> v(-370</Joint9>
 						<Joint10> N(3edfc1aa-0761-4472-a233-bb1f87c9e509:c0t0v</Joint10>
 						<Joint11>|(134,145</Joint11>
 						<Joint12> B(1</Joint12>
@@ -3904,19 +4592,19 @@
 						<Joint14> h(910</Joint14>
 						<Joint15> v(-135</Joint15>
 						<Joint16> N(3ae51fe1-b988-428a-b60d-6c0487ad634e:user event</Joint16>
-						<Joint17>|(1070,540</Joint17>
+						<Joint17>|(1070,570</Joint17>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<DestroyUserEvent>
 				<Attributes>
-					<Bounds>1070 535 40 40</Bounds>
+					<Bounds>1070 565 40 40</Bounds>
 					<Id>3ae51fe1-b988-428a-b60d-6c0487ad634e</Id>
 				</Attributes>
 			</DestroyUserEvent>
 			<Literal xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>0 545 25 15</Bounds>
+					<Bounds>0 575 25 15</Bounds>
 					<DataType>Boolean</DataType>
 					<Id>06bc2f36-07bc-465d-98ae-4cc8cdb56445</Id>
 					<Label>5581e25a-3a97-44a0-bc3d-f96f51728126</Label>
@@ -3926,7 +4614,7 @@
 			</Literal>
 			<CreateUserEvent>
 				<Attributes>
-					<Bounds>45 545 40 40</Bounds>
+					<Bounds>45 575 40 40</Bounds>
 					<EventName>Stop Event</EventName>
 					<Id>89f22ce4-f59e-41be-8050-ecc84631c17f</Id>
 					<Label>652c7895-6139-462e-8869-1ab51ccb48f6</Label>
@@ -3937,16 +4625,16 @@
 					<Id>31e8da8e-dc0a-480a-a7f8-4e3457980bb1</Id>
 					<Joints>
 						<Joint0>N(06bc2f36-07bc-465d-98ae-4cc8cdb56445:Out</Joint0>
-						<Joint1>|(25,550</Joint1>
+						<Joint1>|(25,580</Joint1>
 						<Joint2> N(89f22ce4-f59e-41be-8050-ecc84631c17f:user event data type</Joint2>
-						<Joint3>|(45,550</Joint3>
+						<Joint3>|(45,580</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>06bc2f36-07bc-465d-98ae-4cc8cdb56445</AttachedTo>
-					<Bounds>0 528 61 14</Bounds>
+					<Bounds>0 558 61 14</Bounds>
 					<Id>5581e25a-3a97-44a0-bc3d-f96f51728126</Id>
 				</Attributes>
 				<p.Text>Stop Event</p.Text>
@@ -3954,7 +4642,7 @@
 			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 				<Attributes>
 					<AttachedTo>89f22ce4-f59e-41be-8050-ecc84631c17f</AttachedTo>
-					<Bounds>45 524 134 18</Bounds>
+					<Bounds>45 554 134 18</Bounds>
 					<Id>652c7895-6139-462e-8869-1ab51ccb48f6</Id>
 					<IsReadOnly>True</IsReadOnly>
 					<Visible>False</Visible>
@@ -3963,9 +4651,10 @@
 			</NodeLabel>
 			<MethodCall xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
-					<Bounds>110 545 40 40</Bounds>
+					<Bounds>110 575 40 40</Bounds>
 					<DomainName>NI.MocCommon</DomainName>
 					<Id>a485fbb9-58c9-4ba8-9605-27380f0d9b06</Id>
+					<ResolveFailedHint>"C:\\Users\\Localization Tester\\Documents\\LabVIEW Projects\\Queued Message Handler\\support\\Message Queue\\Create All Message Queues.gvi"</ResolveFailedHint>
 					<Target>Create\ All\ Message\ Queues\.gvi</Target>
 				</Attributes>
 				<p.MethodDeclaration>
@@ -4017,11 +4706,11 @@
 			</MethodCall>
 			<ClusterLiteral xmlns="http://www.ni.com/MocCommon" xmlns:p4="http://www.ni.com/PanelCommon">
 				<Attributes>
-					<Bounds>174 375 61 67</Bounds>
+					<Bounds>83 405 152 118</Bounds>
 					<DataType>@16b0dc3b83284dd8bb0573b5b1594374</DataType>
 					<Id>f18de4d7-89ff-4f22-8108-68bc329dffd6</Id>
 					<Label>daf01921-7605-4106-8128-7c3b01cb171d</Label>
-					<ControlDefinitionChecksum>CHinz9VmrULn1R4naMB6FA==</ControlDefinitionChecksum>
+					<ControlDefinitionChecksum>3LR4ccwS9rguDuKH5mmpGw==</ControlDefinitionChecksum>
 				</Attributes>
 				<p.Data>
 					<Cluster>
@@ -4049,29 +4738,28 @@
 				</ClusterBehavior>
 				<Literal>
 					<Attributes>
-						<Bounds>2 2 15 15</Bounds>
+						<Bounds>2 19 15 15</Bounds>
 						<DataType>Boolean</DataType>
-						<Id>dcdbc931-c6e6-48f5-afaf-8ea3b4919dbc</Id>
-						<Label>5edf04de-fbb9-4aab-809f-d3a7d926ba1a</Label>
+						<Id>198c0901-14e9-4646-9241-441fb47a71bd</Id>
+						<Label>6abd5381-e9bd-42f4-bb54-f4faee2efdec</Label>
 					</Attributes>
 					<p.Data>False</p.Data>
 					<BooleanBehavior />
 				</Literal>
 				<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 					<Attributes>
-						<AttachedTo>dcdbc931-c6e6-48f5-afaf-8ea3b4919dbc</AttachedTo>
-						<Bounds>2 -16 30 15</Bounds>
-						<Id>5edf04de-fbb9-4aab-809f-d3a7d926ba1a</Id>
-						<Visible>False</Visible>
+						<AttachedTo>198c0901-14e9-4646-9241-441fb47a71bd</AttachedTo>
+						<Bounds>2 2 129 14</Bounds>
+						<Id>6abd5381-e9bd-42f4-bb54-f4faee2efdec</Id>
 					</Attributes>
 					<p.Text>Boolean &lt;Replace Me&gt;</p.Text>
 				</NodeLabel>
 				<Literal>
 					<Attributes>
-						<Bounds>2 21 40 15</Bounds>
+						<Bounds>2 55 40 15</Bounds>
 						<DataType>String</DataType>
-						<Id>937e1b86-954c-4bad-abb3-c9465751aeca</Id>
-						<Label>ade4cc97-84f0-400f-803e-4a8030dba072</Label>
+						<Id>879319bd-7267-4f54-9d63-a69b10c47b76</Id>
+						<Label>bb828239-2608-441d-8a8e-943d44b2f696</Label>
 					</Attributes>
 					<p.Data>""</p.Data>
 					<StringBehavior>
@@ -4082,19 +4770,18 @@
 				</Literal>
 				<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 					<Attributes>
-						<AttachedTo>937e1b86-954c-4bad-abb3-c9465751aeca</AttachedTo>
-						<Bounds>2 3 30 15</Bounds>
-						<Id>ade4cc97-84f0-400f-803e-4a8030dba072</Id>
-						<Visible>False</Visible>
+						<AttachedTo>879319bd-7267-4f54-9d63-a69b10c47b76</AttachedTo>
+						<Bounds>2 38 118 14</Bounds>
+						<Id>bb828239-2608-441d-8a8e-943d44b2f696</Id>
 					</Attributes>
 					<p.Text>String &lt;Replace Me&gt;</p.Text>
 				</NodeLabel>
 				<Literal>
 					<Attributes>
-						<Bounds>2 40 40 15</Bounds>
+						<Bounds>2 91 40 15</Bounds>
 						<DataType>Double</DataType>
-						<Id>357cd43d-8f1a-424d-8568-3eb46b9b842a</Id>
-						<Label>11475018-7d0b-4d29-bf1e-4cca433d963a</Label>
+						<Id>a63c7722-4c65-42a0-9bb6-d5d7ee1d5172</Id>
+						<Label>4eb3f3b3-ab67-47de-8298-a1e5fa83ca1a</Label>
 					</Attributes>
 					<p.Data>0x0</p.Data>
 					<NumericBehavior>
@@ -4106,27 +4793,37 @@
 				</Literal>
 				<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
 					<Attributes>
-						<AttachedTo>357cd43d-8f1a-424d-8568-3eb46b9b842a</AttachedTo>
-						<Bounds>2 22 30 15</Bounds>
-						<Id>11475018-7d0b-4d29-bf1e-4cca433d963a</Id>
-						<Visible>False</Visible>
+						<AttachedTo>a63c7722-4c65-42a0-9bb6-d5d7ee1d5172</AttachedTo>
+						<Bounds>2 74 131 14</Bounds>
+						<Id>4eb3f3b3-ab67-47de-8298-a1e5fa83ca1a</Id>
 					</Attributes>
 					<p.Text>Numeric &lt;Replace Me&gt;</p.Text>
 				</NodeLabel>
 			</ClusterLiteral>
+			<NodeLabel xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<AttachedTo>f18de4d7-89ff-4f22-8108-68bc329dffd6</AttachedTo>
+					<Bounds>83 384 92 18</Bounds>
+					<Id>daf01921-7605-4106-8128-7c3b01cb171d</Id>
+					<Visible>False</Visible>
+				</Attributes>
+				<p.Text>Data Cluster</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
-			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Exit" ContentVisibility="[Visibility]Visible" Height="[float]36" Id="244" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]245" Left="[float]650" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]2" Top="[float]391" Value="{DataItemBinding Id=14}" Width="[float]98" />
-			<Label xmlns="http://www.ni.com/PanelCommon" Height="[float]16" Id="245" LabelOwner="[UIModel]244" Left="[float]650" Text="[string]Exit" Top="[float]371" Width="[float]19" />
-			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Something" ContentVisibility="[Visibility]Visible" Height="[float]36" Id="246" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]247" Left="[float]157" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]0" Top="[float]70" Value="{DataItemBinding Id=15}" Width="[float]192" />
-			<Label xmlns="http://www.ni.com/PanelCommon" Height="[float]16" Id="247" LabelOwner="[UIModel]246" Left="[float]157" Text="[string]Do Something &lt;Replace Me&gt;" Top="[float]50" Width="[float]158" />
-			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Something Else" ContentVisibility="[Visibility]Visible" Height="[float]36" Id="248" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]249" Left="[float]157" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]1" Top="[float]137" Value="{DataItemBinding Id=16}" Width="[float]192" />
-			<Label xmlns="http://www.ni.com/PanelCommon" Height="[float]16" Id="249" LabelOwner="[UIModel]248" Left="[float]157" Text="[string]Do Something Else &lt;Replace Me&gt;" Top="[float]117" Width="[float]182" />
-			<StringControl xmlns="http://www.ni.com/Controls.LabVIEW.Design" AcceptsReturn="[bool]True" Height="[float]37" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="252" IsTabStop="[bool]True" Label="[UIModel]253" Left="[float]451" MinHeight="[float]24" TabIndex="[int]3" Text="{DataItemBinding Id=17}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]326" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]297" WordWrap="[bool]True" />
-			<Label xmlns="http://www.ni.com/PanelCommon" Height="[float]16" Id="253" LabelOwner="[UIModel]252" Left="[float]451" Text="[string]Display &lt;Replace Me&gt;" Top="[float]306" Width="[float]120" />
-			<Text xmlns="http://www.ni.com/PlatformFramework" Height="[float]151" Id="383" Left="[float]164" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]This template is for the Queued Message Handler design pattern.&#xA;&#xA;See the diagram for more information on how to use this template." TextWrapping="[TextWrapping]Wrap" Top="[float]212" Width="[float]248" />
-			<Text xmlns="http://www.ni.com/PlatformFramework" Height="[float]104" Id="384" Left="[float]388" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]These controls have associated &quot;Value Changed&quot; events configured in the Event Structure on the diagram.&#xA;&#xA;Replace them (and reconfigure the Event Structure) with the controls you need for your application. " TextWrapping="[TextWrapping]Wrap" Top="[float]64" Width="[float]440" />
+			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Exit" ContentVisibility="[Visibility]Visible" Enabled="[bool]True" Height="[float]36" Id="244" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]245" Left="[float]650" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]2" Top="[float]391" Value="{DataItemBinding Id=14}" Width="[float]98" />
+			<Label xmlns="http://www.ni.com/PanelCommon" Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="245" LabelOwner="[UIModel]244" Left="[float]650" Text="[string]Exit" Top="[float]371" Width="[float]19" />
+			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Something" ContentVisibility="[Visibility]Visible" Enabled="[bool]True" Height="[float]36" Id="246" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]247" Left="[float]157" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]0" Top="[float]70" Value="{DataItemBinding Id=15}" Width="[float]192" />
+			<Label xmlns="http://www.ni.com/PanelCommon" Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="247" LabelOwner="[UIModel]246" Left="[float]157" Text="[string]Do Something &lt;Replace Me&gt;" Top="[float]50" Width="[float]158" />
+			<Button xmlns="http://www.ni.com/Controls.LabVIEW.Design" ClickMode="[ClickMode]Release" Content="[string]Something Else" ContentVisibility="[Visibility]Visible" Enabled="[bool]True" Height="[float]36" Id="248" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]249" Left="[float]157" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]1" Top="[float]137" Value="{DataItemBinding Id=16}" Width="[float]192" />
+			<Label xmlns="http://www.ni.com/PanelCommon" Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="249" LabelOwner="[UIModel]248" Left="[float]157" Text="[string]Do Something Else &lt;Replace Me&gt;" Top="[float]117" Width="[float]182" />
+			<StringControl xmlns="http://www.ni.com/Controls.LabVIEW.Design" AcceptsReturn="[bool]True" Enabled="[bool]True" Height="[float]37" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="252" IsTabStop="[bool]True" Label="[UIModel]253" Left="[float]451" MinHeight="[float]24" TabIndex="[int]3" Text="{DataItemBinding Id=17}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]326" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]297" WordWrap="[bool]True" />
+			<Label xmlns="http://www.ni.com/PanelCommon" Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="253" LabelOwner="[UIModel]252" Left="[float]451" Text="[string]Display &lt;Replace Me&gt;" Top="[float]306" Width="[float]120" />
+			<Text xmlns="http://www.ni.com/PlatformFramework" Foreground="[SMColor]#ff2b3033" Height="[float]151" Id="383" Left="[float]164" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]This template is for the Queued Message Handler design pattern.&#xA;&#xA;See the diagram for more information on how to use this template." TextWrapping="[TextWrapping]Wrap" Top="[float]212" Width="[float]248" />
+			<Text xmlns="http://www.ni.com/PlatformFramework" Foreground="[SMColor]#ff2b3033" Height="[float]104" Id="384" Left="[float]388" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]These controls have associated &quot;Value Changed&quot; events configured in the Event Structure on the diagram.&#xA;&#xA;Replace them (and reconfigure the Event Structure) with the controls you need for your application. " TextWrapping="[TextWrapping]Wrap" Top="[float]64" Width="[float]440" />
 			<PanelExecutionWindow Id="478" />
+			<NumericText xmlns="http://www.ni.com/Controls.LabVIEW.Design" BaseName="[string]Numeric" Height="[float]24" Id="495" Label="[UIModel]496" Left="[float]451" MinHeight="[float]24" TabIndex="[int]4" Top="[float]228" Value="{DataItemBinding Id=493}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" />
+			<Label xmlns="http://www.ni.com/PanelCommon" Height="[float]16" Id="496" LabelOwner="[UIModel]495" Left="[float]451" Text="[string]My Numeric Do Something" Top="[float]208" Width="[float]145" />
 		</NativeFrontPanel>
 		<DataItem xmlns="http://www.ni.com/MocCommon" DataType="Boolean" Id="14" IsLatched="True" Name="Exit">
 			<p.DefaultValue>False</p.DefaultValue>
@@ -4139,6 +4836,9 @@
 		</DataItem>
 		<DataItem xmlns="http://www.ni.com/MocCommon" DataType="String" Id="17" Name="Display &lt;Replace Me&gt;">
 			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem xmlns="http://www.ni.com/MocCommon" AdaptToDiagramType="True" DataType="Double" Id="493" Name="My Numeric Do Something">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable>
@@ -4179,6 +4879,27 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="bd2232353db34e3ebe062acdcac878ce">
 			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="85d4d131e8e04ec68556abda53283871">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Source" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Type" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Time" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Index" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.PanelRuntime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e4a40d300061421aab080f451a0f27c1">
+			<Attributed AttributedType="@c764cee7ac0a49e4962cdc938623d1d9">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="5bcef6e7b2954ec9a8ed6405b3062df4">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -4260,6 +4981,13 @@
 				</ClosedGenericParameters>
 			</Composite>
 		</p.TypeReference>
+		<p.TypeReference TypeId="c764cee7ac0a49e4962cdc938623d1d9">
+			<Event Id="1" Name="Value changed" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@6eb65f85acd3433b880bd7366eac17f6" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
 		<p.TypeReference TypeId="c941c1a4b956428ab7618b07565aabfb">
 			<Event Id="1" Name="Close" GenericTypeDefinition="Void">
 				<Parameters>
@@ -4312,6 +5040,16 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="268b06fd53794a2090bef870f8750593">
 			<Typedef TypedefName="Message Cluster.gtype" UnderlyingType="@edf3d2186c934836ba541026fcca7142" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="6eb65f85acd3433b880bd7366eac17f6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.PanelRuntime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Double" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="3ed1b779b0bd4eadbadb8030728e0726">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -4367,6 +5105,23 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
+		<p.IconModel Target="NumericDoSomething\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]NumericDoSomething" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
 		<p.IconModel Target="Error\ Handler\ \-\ Event\ Handling\ Loop\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
@@ -4377,6 +5132,23 @@
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 							</IconTemplate>
 							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADmSURBVEhL7Y7BDsMwCEP31/v8DrDDCLAurdbDpL5DZBtw+9gu465O3NWJP62+EH5i7SNcXYPbi2eH2nU1Hui/DWICLUS9z1RtJVm7AFHvw2MaI2kXIGoB1lamXOAAJuLbLkDUwJM04jEMEBuTaqkM2Pg6XWTQdJbKcJtyQX1Nd2gqBvSDpjrtVUs1U3P1KdWmg9VpB9C3B5V2zWoJI+NtODQYzaHAdI3+L5I4x8fq2Cu6wlnYRA7UIo34zBH7NDSXiTxlgW+YThvAz0Q4tbrlS3VFVms1Zwa7zlVXOBu9EI5apL9n217qrDqdDHaJGgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="Function\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Function" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
 						</IconPanel>
 					</Icon>
 				</MergeItem>
