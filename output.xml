@@ -43,8 +43,9 @@
 					<Bounds>525 145 30 30</Bounds>
 					<Id>2996a853-28c4-4384-956b-c1ec330bdc74</Id>
 					<Terminals>
-						<Terminal0>c0t0v=268d6bc0-3353-483e-8b0f-b97124dd8b9e</Terminal0>
-						<Terminal1>c1t0v=8bd10a0c-15b0-430b-af47-342cfc74c85b</Terminal1>
+						<Terminal0>o=f198cf77-d66f-4fe0-911f-0d9d6c90eea8</Terminal0>
+						<Terminal1>c0t0v=268d6bc0-3353-483e-8b0f-b97124dd8b9e</Terminal1>
+						<Terminal2>c1t0v=8bd10a0c-15b0-430b-af47-342cfc74c85b</Terminal2>
 					</Terminals>
 				</Attributes>
 			</Add>
@@ -54,7 +55,7 @@
 					<DataType>Int32</DataType>
 					<Id>558cbb21-aaea-45d7-ac88-3739dcc2993c</Id>
 				</Attributes>
-				<p.Data>0</p.Data>
+				<p.Data>1</p.Data>
 				<NumericBehavior>
 					<Attributes>
 						<Interpretation>Numeric</Interpretation>
@@ -99,6 +100,49 @@
 						<Joint3> v(-10</Joint3>
 						<Joint4> N(2996a853-28c4-4384-956b-c1ec330bdc74:c1t0v</Joint4>
 						<Joint5>|(525,165</Joint5>
+					</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>a46cb0e7-3b3c-4ac3-ade0-3c04c12c38ed</Id>
+					<Joints>
+						<Joint0>N(5a7caf7e-b055-4e73-a73a-6bb6bd99d690:Out</Joint0>
+						<Joint1>|(375,395</Joint1>
+						<Joint2> h(153</Joint2>
+						<Joint3> v(5</Joint3>
+						<Joint4> N(09bdf9fc-37a7-4e65-a6ae-f0b52f9efaa1:x</Joint4>
+						<Joint5>|(535,400</Joint5>
+					</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>96ba1905-2097-4252-93b2-690c01e147ba</Id>
+					<Joints>
+						<Joint0>N(39f1bf7c-1940-481c-a11f-ba85ebfab20a:Out</Joint0>
+						<Joint1>|(375,435</Joint1>
+						<Joint2> h(155</Joint2>
+						<Joint3> v(-20</Joint3>
+						<Joint4> N(09bdf9fc-37a7-4e65-a6ae-f0b52f9efaa1:y</Joint4>
+						<Joint5>|(535,415</Joint5>
+					</Joints>
+				</Attributes>
+			</Wire>
+			<Increment>
+				<Attributes>
+					<Bounds>635 145 30 30</Bounds>
+					<Id>09d0b62b-3a50-4e8b-8478-e44f18c0c32e</Id>
+				</Attributes>
+			</Increment>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>f198cf77-d66f-4fe0-911f-0d9d6c90eea8</Id>
+					<Joints>
+						<Joint0>N(2996a853-28c4-4384-956b-c1ec330bdc74:o</Joint0>
+						<Joint1>|(555,160</Joint1>
+						<Joint2> N(09d0b62b-3a50-4e8b-8478-e44f18c0c32e:x</Joint2>
+						<Joint3>|(635,160</Joint3>
 					</Joints>
 				</Attributes>
 			</Wire>
