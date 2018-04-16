@@ -12,7 +12,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Function_2" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Function_2 - Copy" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -48,12 +48,6 @@
 					</Terminals>
 				</Attributes>
 			</Add>
-			<Subtract>
-				<Attributes>
-					<Bounds>535 395 30 30</Bounds>
-					<Id>09bdf9fc-37a7-4e65-a6ae-f0b52f9efaa1</Id>
-				</Attributes>
-			</Subtract>
 			<Literal xmlns="http://www.ni.com/MocCommon">
 				<Attributes>
 					<Bounds>330 135 40 15</Bounds>
@@ -73,34 +67,6 @@
 					<Bounds>330 170 40 15</Bounds>
 					<DataType>Int32</DataType>
 					<Id>9a78bd8a-a6a3-432b-a209-45da7d750f1d</Id>
-				</Attributes>
-				<p.Data>0</p.Data>
-				<NumericBehavior>
-					<Attributes>
-						<Interpretation>Numeric</Interpretation>
-						<ValueFormatter>LV:0</ValueFormatter>
-					</Attributes>
-				</NumericBehavior>
-			</Literal>
-			<Literal xmlns="http://www.ni.com/MocCommon">
-				<Attributes>
-					<Bounds>335 390 40 15</Bounds>
-					<DataType>Int32</DataType>
-					<Id>5a7caf7e-b055-4e73-a73a-6bb6bd99d690</Id>
-				</Attributes>
-				<p.Data>0</p.Data>
-				<NumericBehavior>
-					<Attributes>
-						<Interpretation>Numeric</Interpretation>
-						<ValueFormatter>LV:0</ValueFormatter>
-					</Attributes>
-				</NumericBehavior>
-			</Literal>
-			<Literal xmlns="http://www.ni.com/MocCommon">
-				<Attributes>
-					<Bounds>335 430 40 15</Bounds>
-					<DataType>Int32</DataType>
-					<Id>39f1bf7c-1940-481c-a11f-ba85ebfab20a</Id>
 				</Attributes>
 				<p.Data>0</p.Data>
 				<NumericBehavior>
@@ -133,32 +99,6 @@
 						<Joint3> v(-10</Joint3>
 						<Joint4> N(2996a853-28c4-4384-956b-c1ec330bdc74:c1t0v</Joint4>
 						<Joint5>|(525,165</Joint5>
-					</Joints>
-				</Attributes>
-			</Wire>
-			<Wire xmlns="http://www.ni.com/PlatformFramework">
-				<Attributes>
-					<Id>a46cb0e7-3b3c-4ac3-ade0-3c04c12c38ed</Id>
-					<Joints>
-						<Joint0>N(5a7caf7e-b055-4e73-a73a-6bb6bd99d690:Out</Joint0>
-						<Joint1>|(375,395</Joint1>
-						<Joint2> h(153</Joint2>
-						<Joint3> v(5</Joint3>
-						<Joint4> N(09bdf9fc-37a7-4e65-a6ae-f0b52f9efaa1:x</Joint4>
-						<Joint5>|(535,400</Joint5>
-					</Joints>
-				</Attributes>
-			</Wire>
-			<Wire xmlns="http://www.ni.com/PlatformFramework">
-				<Attributes>
-					<Id>96ba1905-2097-4252-93b2-690c01e147ba</Id>
-					<Joints>
-						<Joint0>N(39f1bf7c-1940-481c-a11f-ba85ebfab20a:Out</Joint0>
-						<Joint1>|(375,435</Joint1>
-						<Joint2> h(155</Joint2>
-						<Joint3> v(-20</Joint3>
-						<Joint4> N(09bdf9fc-37a7-4e65-a6ae-f0b52f9efaa1:y</Joint4>
-						<Joint5>|(535,415</Joint5>
 					</Joints>
 				</Attributes>
 			</Wire>
