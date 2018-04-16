@@ -54,7 +54,7 @@
 					<DataType>Int32</DataType>
 					<Id>687ad291-6411-473e-a3f1-6022d7989770</Id>
 				</Attributes>
-				<p.Data>0</p.Data>
+				<p.Data>1</p.Data>
 				<NumericBehavior>
 					<Attributes>
 						<Interpretation>Numeric</Interpretation>
