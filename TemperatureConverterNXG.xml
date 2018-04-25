@@ -142,10 +142,10 @@
 					</Attributes>
 					<Comment xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>20 425 195 28</Bounds>
+							<Bounds>20 425 195 15</Bounds>
 							<Id>bb59c27e-6d8e-4542-9625-5623bffea03b</Id>
 						</Attributes>
-						<p.Text>"Fahrenheit to Celsius Converter\r\nMISSING: Correct Units output"</p.Text>
+						<p.Text>Fahrenheit to Celsius Converter</p.Text>
 					</Comment>
 					<Subtract>
 						<Attributes>
@@ -299,6 +299,30 @@
 							</Joints>
 						</Attributes>
 					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>190 310 65 15</Bounds>
+							<DataType>String</DataType>
+							<Id>aa03ebfd-2b3f-4655-96e4-1234b4b32025</Id>
+						</Attributes>
+						<p.Data>Celsius</p.Data>
+						<StringBehavior>
+							<Attributes>
+								<TextDisplayMode>Default</TextDisplayMode>
+							</Attributes>
+						</StringBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>06ccd00a-532e-482b-af47-601f7f6b9e81</Id>
+							<Joints>
+								<Joint0>N(aa03ebfd-2b3f-4655-96e4-1234b4b32025:Out</Joint0>
+								<Joint1>|(255,315</Joint1>
+								<Joint2> N(6741657f-2c16-4c05-869c-5a8d8450de5a:37</Joint2>
+								<Joint3>|(581,315</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
 				</CaseStructure.Case>
 				<CaseStructure.Selector>
 					<Attributes>
@@ -346,7 +370,7 @@
 						<Terminals>
 							<Terminal0>eaa01c82-c657-4a1d-82c5-c64be869615e=dcef3ce0-3c44-4ed2-b899-f94963462579</Terminal0>
 							<Terminal1>b796855a-77f2-44e5-854c-e90d3c92a18b=2ecea1c7-5f14-495f-b10a-4f7306995074</Terminal1>
-							<Terminal2>673510ed-86d8-4f2e-8f0c-c5c81f0df8c5</Terminal2>
+							<Terminal2>673510ed-86d8-4f2e-8f0c-c5c81f0df8c5=06ccd00a-532e-482b-af47-601f7f6b9e81</Terminal2>
 						</Terminals>
 					</Attributes>
 				</CaseStructure.Tunnel>
