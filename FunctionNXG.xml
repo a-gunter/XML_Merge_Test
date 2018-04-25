@@ -69,7 +69,7 @@
 					<Bounds>470 -50 665 420</Bounds>
 					<Default>76</Default>
 					<Id>158fe3d9-d503-42c6-951a-6c748d7836b4</Id>
-					<Selected>77</Selected>
+					<Selected>76</Selected>
 					<UserSelectorBounds>288 0 88 17</UserSelectorBounds>
 				</Attributes>
 				<CaseStructure.Case>
@@ -78,6 +78,187 @@
 						<Id>c1a0a42f-44de-432d-90fa-6ef79890c29d</Id>
 						<Pattern>False</Pattern>
 					</Attributes>
+					<Multiply>
+						<Attributes>
+							<Bounds>55 10 30 30</Bounds>
+							<Id>cbbd55c3-e434-4998-bc67-5d63293194ba</Id>
+							<Terminals>
+								<Terminal0>o=bf02261e-c07e-463b-9827-007aa297d2b5</Terminal0>
+								<Terminal1>c0t0v=0e54a332-20f3-4dc7-8f5e-1f3f504a3449</Terminal1>
+								<Terminal2>c1t0v=32acb5c7-aece-4615-bcb0-09d6b32c1bfc</Terminal2>
+							</Terminals>
+						</Attributes>
+					</Multiply>
+					<Divide>
+						<Attributes>
+							<Bounds>110 75 30 30</Bounds>
+							<Id>9e218b77-8a89-4248-acbf-058383414d96</Id>
+						</Attributes>
+					</Divide>
+					<Add>
+						<Attributes>
+							<Bounds>205 115 30 30</Bounds>
+							<Id>094c108b-b5ca-4076-9f9f-8552228b6cbb</Id>
+							<Terminals>
+								<Terminal0>o=23393394-7257-4d3f-8a6a-095db824c54d</Terminal0>
+								<Terminal1>c0t0v=81fd8a47-a844-404f-b0d6-e1efd86471bd</Terminal1>
+								<Terminal2>c1t0v=912ebe17-c418-4f9a-a815-88a6a26318b6</Terminal2>
+							</Terminals>
+						</Attributes>
+					</Add>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>0e54a332-20f3-4dc7-8f5e-1f3f504a3449</Id>
+							<Joints>
+								<Joint0>N(ce9e0693-b928-4587-b9f3-9760b6b77025:76</Joint0>
+								<Joint1>|(4,15</Joint1>
+								<Joint2> N(cbbd55c3-e434-4998-bc67-5d63293194ba:c0t0v</Joint2>
+								<Joint3>|(55,15</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>bf02261e-c07e-463b-9827-007aa297d2b5</Id>
+							<Joints>
+								<Joint0>N(cbbd55c3-e434-4998-bc67-5d63293194ba:o</Joint0>
+								<Joint1>|(85,25</Joint1>
+								<Joint2> h(18</Joint2>
+								<Joint3> v(55</Joint3>
+								<Joint4> N(9e218b77-8a89-4248-acbf-058383414d96:x</Joint4>
+								<Joint5>|(110,80</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>81fd8a47-a844-404f-b0d6-e1efd86471bd</Id>
+							<Joints>
+								<Joint0>N(9e218b77-8a89-4248-acbf-058383414d96:x/y</Joint0>
+								<Joint1>|(140,90</Joint1>
+								<Joint2> h(58</Joint2>
+								<Joint3> v(30</Joint3>
+								<Joint4> N(094c108b-b5ca-4076-9f9f-8552228b6cbb:c0t0v</Joint4>
+								<Joint5>|(205,120</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>23393394-7257-4d3f-8a6a-095db824c54d</Id>
+							<Joints>
+								<Joint0>N(094c108b-b5ca-4076-9f9f-8552228b6cbb:o</Joint0>
+								<Joint1>|(235,130</Joint1>
+								<Joint2> N(d7601164-96a9-4b43-aaed-19521109a47d:76</Joint2>
+								<Joint3>|(651,130</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>225 295 85 15</Bounds>
+							<DataType>String</DataType>
+							<Id>8987dfef-4da7-4448-91b5-ec3d03660623</Id>
+						</Attributes>
+						<p.Data>Fahrenheit</p.Data>
+						<StringBehavior>
+							<Attributes>
+								<TextDisplayMode>Default</TextDisplayMode>
+							</Attributes>
+						</StringBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>25ba5e5e-23d5-438a-95bd-992bed1a2ca8</Id>
+							<Joints>
+								<Joint0>N(8987dfef-4da7-4448-91b5-ec3d03660623:Out</Joint0>
+								<Joint1>|(310,300</Joint1>
+								<Joint2> N(d6ffdf47-9977-4e2b-ac99-b46acad6a9b2:76</Joint2>
+								<Joint3>|(651,300</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>5 75 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>ffcaf105-a162-49e1-a3c1-5cb01ff8a60d</Id>
+						</Attributes>
+						<p.Data>0x4022000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>32acb5c7-aece-4615-bcb0-09d6b32c1bfc</Id>
+							<Joints>
+								<Joint0>N(ffcaf105-a162-49e1-a3c1-5cb01ff8a60d:Out</Joint0>
+								<Joint1>|(45,80</Joint1>
+								<Joint2> h(5</Joint2>
+								<Joint3> v(-50</Joint3>
+								<Joint4> N(cbbd55c3-e434-4998-bc67-5d63293194ba:c1t0v</Joint4>
+								<Joint5>|(55,30</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>30 145 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>eda8a009-3b8b-4639-8b06-b060d0612caf</Id>
+						</Attributes>
+						<p.Data>0x4014000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>7c894681-8201-41fc-99fc-a602e7a83d97</Id>
+							<Joints>
+								<Joint0>N(eda8a009-3b8b-4639-8b06-b060d0612caf:Out</Joint0>
+								<Joint1>|(70,150</Joint1>
+								<Joint2> h(35</Joint2>
+								<Joint3> v(-55</Joint3>
+								<Joint4> N(9e218b77-8a89-4248-acbf-058383414d96:y</Joint4>
+								<Joint5>|(110,95</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>135 185 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>f00e70e9-cda7-444c-ab2f-359e8352ae2a</Id>
+						</Attributes>
+						<p.Data>0x4040000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>912ebe17-c418-4f9a-a815-88a6a26318b6</Id>
+							<Joints>
+								<Joint0>N(f00e70e9-cda7-444c-ab2f-359e8352ae2a:Out</Joint0>
+								<Joint1>|(175,190</Joint1>
+								<Joint2> h(25</Joint2>
+								<Joint3> v(-55</Joint3>
+								<Joint4> N(094c108b-b5ca-4076-9f9f-8552228b6cbb:c1t0v</Joint4>
+								<Joint5>|(205,135</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
 				</CaseStructure.Case>
 				<CaseStructure.Case>
 					<Attributes>
@@ -98,6 +279,42 @@
 						</Terminals>
 					</Attributes>
 				</CaseStructure.Selector>
+				<CaseStructure.Tunnel>
+					<Attributes>
+						<Bounds>-4 15 13 10</Bounds>
+						<Docking>Left</Docking>
+						<Id>ce9e0693-b928-4587-b9f3-9760b6b77025</Id>
+						<Terminals>
+							<Terminal0>158fe3d9-d503-42c6-951a-6c748d7836b4=6d2d984a-7a36-42e6-8428-eeb9802bccbc</Terminal0>
+							<Terminal1>c1a0a42f-44de-432d-90fa-6ef79890c29d=0e54a332-20f3-4dc7-8f5e-1f3f504a3449</Terminal1>
+							<Terminal2>e58a7762-a6be-49c0-ac1f-e74f48414c11</Terminal2>
+						</Terminals>
+					</Attributes>
+				</CaseStructure.Tunnel>
+				<CaseStructure.Tunnel>
+					<Attributes>
+						<Bounds>656 130 13 10</Bounds>
+						<Docking>Right</Docking>
+						<Id>d7601164-96a9-4b43-aaed-19521109a47d</Id>
+						<Terminals>
+							<Terminal0>158fe3d9-d503-42c6-951a-6c748d7836b4=46914d53-fb10-441a-8f37-903f86493cb0</Terminal0>
+							<Terminal1>c1a0a42f-44de-432d-90fa-6ef79890c29d=23393394-7257-4d3f-8a6a-095db824c54d</Terminal1>
+							<Terminal2>e58a7762-a6be-49c0-ac1f-e74f48414c11</Terminal2>
+						</Terminals>
+					</Attributes>
+				</CaseStructure.Tunnel>
+				<CaseStructure.Tunnel>
+					<Attributes>
+						<Bounds>656 300 13 10</Bounds>
+						<Docking>Right</Docking>
+						<Id>d6ffdf47-9977-4e2b-ac99-b46acad6a9b2</Id>
+						<Terminals>
+							<Terminal0>158fe3d9-d503-42c6-951a-6c748d7836b4=b6496f3a-bb0a-4be2-81df-164952ebed71</Terminal0>
+							<Terminal1>c1a0a42f-44de-432d-90fa-6ef79890c29d=25ba5e5e-23d5-438a-95bd-992bed1a2ca8</Terminal1>
+							<Terminal2>e58a7762-a6be-49c0-ac1f-e74f48414c11</Terminal2>
+						</Terminals>
+					</Attributes>
+				</CaseStructure.Tunnel>
 			</CaseStructure>
 			<IsGreaterThan0>
 				<Attributes>
@@ -201,6 +418,43 @@
 				</Attributes>
 				<p.Text>Input Temperature</p.Text>
 			</NodeLabel>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>6d2d984a-7a36-42e6-8428-eeb9802bccbc</Id>
+					<Joints>
+						<Joint0>N(f20dec89-84b8-4fc7-9363-a04678d3da4f:Value</Joint0>
+						<Joint1>|(400,-30</Joint1>
+						<Joint2> N(ce9e0693-b928-4587-b9f3-9760b6b77025:75</Joint2>
+						<Joint3>|(466,-30</Joint3>
+					</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>46914d53-fb10-441a-8f37-903f86493cb0</Id>
+					<Joints>
+						<Joint0>N(d7601164-96a9-4b43-aaed-19521109a47d:75</Joint0>
+						<Joint1>|(1139,85</Joint1>
+						<Joint2> h(34</Joint2>
+						<Joint3> v(-55</Joint3>
+						<Joint4> N(fbb1cc9f-e91f-46e7-9907-02f9471fe951:Value</Joint4>
+						<Joint5>|(1183,30</Joint5>
+					</Joints>
+				</Attributes>
+			</Wire>
+			<Wire xmlns="http://www.ni.com/PlatformFramework">
+				<Attributes>
+					<Id>b6496f3a-bb0a-4be2-81df-164952ebed71</Id>
+					<Joints>
+						<Joint0>N(d6ffdf47-9977-4e2b-ac99-b46acad6a9b2:75</Joint0>
+						<Joint1>|(1139,255</Joint1>
+						<Joint2> h(44</Joint2>
+						<Joint3> v(-90</Joint3>
+						<Joint4> N(e5d969f4-e6e7-4847-b64c-eec6e07b6f9f:Value</Joint4>
+						<Joint5>|(1193,165</Joint5>
+					</Joints>
+				</Attributes>
+			</Wire>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
