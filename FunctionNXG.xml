@@ -428,6 +428,32 @@
 							</Joints>
 						</Attributes>
 					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>210 230 65 15</Bounds>
+							<DataType>String</DataType>
+							<Id>05b65ce4-5116-4c06-9e3d-35c4724c5c9a</Id>
+						</Attributes>
+						<p.Data>Celsius</p.Data>
+						<StringBehavior>
+							<Attributes>
+								<TextDisplayMode>Default</TextDisplayMode>
+							</Attributes>
+						</StringBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>3f30d54d-620c-45c3-a847-dc83f9464d77</Id>
+							<Joints>
+								<Joint0>N(05b65ce4-5116-4c06-9e3d-35c4724c5c9a:Out</Joint0>
+								<Joint1>|(275,235</Joint1>
+								<Joint2> h(371</Joint2>
+								<Joint3> v(-25</Joint3>
+								<Joint4> N(4307e6da-d64f-4806-9c76-89f24d16fd74:77</Joint4>
+								<Joint5>|(651,210</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
 				</CaseStructure.Case>
 				<CaseStructure.Selector>
 					<Attributes>
@@ -475,7 +501,7 @@
 						<Terminals>
 							<Terminal0>4acb7d5f-4db2-49db-8ed2-ce649257dc2a=28213514-6408-43b5-8306-4f9097f73108</Terminal0>
 							<Terminal1>18ec1448-e841-4645-97ab-1a0e23104b5c=3e9caf4d-3857-4f05-8c7c-830c2019c9b7</Terminal1>
-							<Terminal2>4e057af7-94b1-44ef-8408-b6af2cceb239</Terminal2>
+							<Terminal2>4e057af7-94b1-44ef-8408-b6af2cceb239=3f30d54d-620c-45c3-a847-dc83f9464d77</Terminal2>
 						</Terminals>
 					</Attributes>
 				</CaseStructure.Tunnel>
