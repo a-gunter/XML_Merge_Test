@@ -93,7 +93,7 @@
 					<Bounds>400 180 595 475</Bounds>
 					<Default>36</Default>
 					<Id>e3039df3-bc9d-4c82-9b71-bdfdf35057ba</Id>
-					<Selected>37</Selected>
+					<Selected>36</Selected>
 					<UserSelectorBounds>254 0 88 17</UserSelectorBounds>
 				</Attributes>
 				<CaseStructure.Case>
@@ -104,10 +104,10 @@
 					</Attributes>
 					<Comment xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
-							<Bounds>15 420 195 28</Bounds>
+							<Bounds>15 420 195 15</Bounds>
 							<Id>af7f6424-6bb1-49bc-9fc9-b29e29286394</Id>
 						</Attributes>
-						<p.Text>"Celsius to Fahrenheit Converter\r\nMISSING: Conversion Equation"</p.Text>
+						<p.Text>Celsius to Fahrenheit Converter</p.Text>
 					</Comment>
 					<Literal xmlns="http://www.ni.com/MocCommon">
 						<Attributes>
@@ -130,6 +130,165 @@
 								<Joint1>|(325,315</Joint1>
 								<Joint2> N(e4cd3fbf-ed3d-41f1-a53f-c37142f5e060:36</Joint2>
 								<Joint3>|(581,315</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Multiply>
+						<Attributes>
+							<Bounds>70 35 30 30</Bounds>
+							<Id>8dec9ef6-1fec-4aee-965d-b838eac64c4f</Id>
+							<Terminals>
+								<Terminal0>o=79668256-eaa5-4a4e-b547-cc054050ecb5</Terminal0>
+								<Terminal1>c0t0v=1d58dea3-2f3a-4dfd-8bc6-5dfa2a9e7d24</Terminal1>
+								<Terminal2>c1t0v=e09654d1-8b00-4611-a32f-ca5b94f5f7be</Terminal2>
+							</Terminals>
+						</Attributes>
+					</Multiply>
+					<Divide>
+						<Attributes>
+							<Bounds>160 55 30 30</Bounds>
+							<Id>6eb4182b-546e-4e6c-8e9b-01606667a20b</Id>
+						</Attributes>
+					</Divide>
+					<Add>
+						<Attributes>
+							<Bounds>255 90 30 30</Bounds>
+							<Id>fbe51c68-08c2-446f-86e2-c6ffa2ce5820</Id>
+							<Terminals>
+								<Terminal0>o=fa2c4a5e-ad88-42b8-a610-58d1bb19db9e</Terminal0>
+								<Terminal1>c0t0v=30083110-9263-4108-80fb-f3abb145534d</Terminal1>
+								<Terminal2>c1t0v=ce698c26-69f6-4a13-99c9-239b36e7f862</Terminal2>
+							</Terminals>
+						</Attributes>
+					</Add>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>fa2c4a5e-ad88-42b8-a610-58d1bb19db9e</Id>
+							<Joints>
+								<Joint0>N(fbe51c68-08c2-446f-86e2-c6ffa2ce5820:o</Joint0>
+								<Joint1>|(285,105</Joint1>
+								<Joint2> h(291</Joint2>
+								<Joint3> v(10</Joint3>
+								<Joint4> N(2b477f98-58c8-4e14-bddf-0862e97e05a2:36</Joint4>
+								<Joint5>|(581,115</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>30083110-9263-4108-80fb-f3abb145534d</Id>
+							<Joints>
+								<Joint0>N(6eb4182b-546e-4e6c-8e9b-01606667a20b:x/y</Joint0>
+								<Joint1>|(190,70</Joint1>
+								<Joint2> h(5</Joint2>
+								<Joint3> v(25</Joint3>
+								<Joint4> N(fbe51c68-08c2-446f-86e2-c6ffa2ce5820:c0t0v</Joint4>
+								<Joint5>|(255,95</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>79668256-eaa5-4a4e-b547-cc054050ecb5</Id>
+							<Joints>
+								<Joint0>N(8dec9ef6-1fec-4aee-965d-b838eac64c4f:o</Joint0>
+								<Joint1>|(100,50</Joint1>
+								<Joint2> h(53</Joint2>
+								<Joint3> v(10</Joint3>
+								<Joint4> N(6eb4182b-546e-4e6c-8e9b-01606667a20b:x</Joint4>
+								<Joint5>|(160,60</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>1d58dea3-2f3a-4dfd-8bc6-5dfa2a9e7d24</Id>
+							<Joints>
+								<Joint0>N(9d12508b-a9e3-45b2-b3b9-05d8e38998b6:36</Joint0>
+								<Joint1>|(4,40</Joint1>
+								<Joint2> N(8dec9ef6-1fec-4aee-965d-b838eac64c4f:c0t0v</Joint2>
+								<Joint3>|(70,40</Joint3>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>10 55 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>2521cd45-5a21-4658-a076-6d5e7cf80f06</Id>
+						</Attributes>
+						<p.Data>0x4022000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>e09654d1-8b00-4611-a32f-ca5b94f5f7be</Id>
+							<Joints>
+								<Joint0>N(2521cd45-5a21-4658-a076-6d5e7cf80f06:Out</Joint0>
+								<Joint1>|(50,60</Joint1>
+								<Joint2> h(15</Joint2>
+								<Joint3> v(-5</Joint3>
+								<Joint4> N(8dec9ef6-1fec-4aee-965d-b838eac64c4f:c1t0v</Joint4>
+								<Joint5>|(70,55</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>90 75 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>7a63feee-b072-4c18-8e7c-0c23c6626cb1</Id>
+						</Attributes>
+						<p.Data>0x4014000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>139d871e-b9c3-4503-b866-d7e7d6fd068c</Id>
+							<Joints>
+								<Joint0>N(7a63feee-b072-4c18-8e7c-0c23c6626cb1:Out</Joint0>
+								<Joint1>|(130,80</Joint1>
+								<Joint2> h(25</Joint2>
+								<Joint3> v(-5</Joint3>
+								<Joint4> N(6eb4182b-546e-4e6c-8e9b-01606667a20b:y</Joint4>
+								<Joint5>|(160,75</Joint5>
+							</Joints>
+						</Attributes>
+					</Wire>
+					<Literal xmlns="http://www.ni.com/MocCommon">
+						<Attributes>
+							<Bounds>170 110 40 15</Bounds>
+							<DataType>Double</DataType>
+							<Id>043c55eb-bba8-4bb9-b64f-301c5dbad4d5</Id>
+						</Attributes>
+						<p.Data>0x4040000000000000</p.Data>
+						<NumericBehavior>
+							<Attributes>
+								<Interpretation>Exact</Interpretation>
+								<ValueFormatter>LV:G6</ValueFormatter>
+							</Attributes>
+						</NumericBehavior>
+					</Literal>
+					<Wire xmlns="http://www.ni.com/PlatformFramework">
+						<Attributes>
+							<Id>ce698c26-69f6-4a13-99c9-239b36e7f862</Id>
+							<Joints>
+								<Joint0>N(043c55eb-bba8-4bb9-b64f-301c5dbad4d5:Out</Joint0>
+								<Joint1>|(210,115</Joint1>
+								<Joint2> h(40</Joint2>
+								<Joint3> v(-5</Joint3>
+								<Joint4> N(fbe51c68-08c2-446f-86e2-c6ffa2ce5820:c1t0v</Joint4>
+								<Joint5>|(255,110</Joint5>
 							</Joints>
 						</Attributes>
 					</Wire>
@@ -319,7 +478,7 @@
 						<Id>9d12508b-a9e3-45b2-b3b9-05d8e38998b6</Id>
 						<Terminals>
 							<Terminal0>e3039df3-bc9d-4c82-9b71-bdfdf35057ba=ea42a156-7d2b-435b-ac9a-32506e1d011c</Terminal0>
-							<Terminal1>7c86fa14-6489-4f26-a093-adfc00b62e50</Terminal1>
+							<Terminal1>7c86fa14-6489-4f26-a093-adfc00b62e50=1d58dea3-2f3a-4dfd-8bc6-5dfa2a9e7d24</Terminal1>
 							<Terminal2>09e70aae-21e9-46f0-80bb-78b8fc860d78=f4498875-f52f-4ed1-87d2-e26c19c8dad6</Terminal2>
 						</Terminals>
 					</Attributes>
@@ -332,7 +491,7 @@
 						<Id>2b477f98-58c8-4e14-bddf-0862e97e05a2</Id>
 						<Terminals>
 							<Terminal0>e3039df3-bc9d-4c82-9b71-bdfdf35057ba=0891d7ec-dbda-4d51-b9aa-147389318d3b</Terminal0>
-							<Terminal1>7c86fa14-6489-4f26-a093-adfc00b62e50</Terminal1>
+							<Terminal1>7c86fa14-6489-4f26-a093-adfc00b62e50=fa2c4a5e-ad88-42b8-a610-58d1bb19db9e</Terminal1>
 							<Terminal2>09e70aae-21e9-46f0-80bb-78b8fc860d78=a7793cd8-3f05-4536-a586-862030351b13</Terminal2>
 						</Terminals>
 					</Attributes>
